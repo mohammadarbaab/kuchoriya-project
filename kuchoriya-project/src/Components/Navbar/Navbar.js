@@ -3,7 +3,7 @@ import kuchoriya_logo from "../../assests/kuchoriya_Logo.png";
 import arrow_icon from "../../assests/arrow-down.png";
 import team_image from "../../assests/team_image.png";
 import { TfiAlignRight } from "react-icons/tfi";
-import { RxCrossCircled } from 'react-icons/rx';
+import { RxCrossCircled } from "react-icons/rx";
 
 function Navbar() {
   const [showPopup, setShowPopup] = useState(null); // Show specific popup by index
@@ -56,7 +56,7 @@ function Navbar() {
           <TfiAlignRight />
         </div>
       </nav>
-      
+
       <div
         className={`flex flex-col items-start transition-transform duration-300 ease-in-out fixed top-0 left-0 h-full w-full bg-white text-white px-2 py-2 gap-1 md:hidden ${
           isMenuOpen ? "transform translate-x-0" : "transform -translate-x-full"
@@ -313,5 +313,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
