@@ -1,3 +1,275 @@
+justify-center md:items-start items-center
+ 
+md:justify-start md:items-start
+ 
+sm:font-[600] sm:text-[36px]
+ 
+hidden md:block
+ 
+// Ensure the text color is white
+ 
+
+        <h1>1</h1>
+ 
+/appium_icon.png
+ 
+appinnun
+ 
+  {items.map((item, index) => (
+              <div
+                key={index}
+                className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+                  hoveredIndex === index
+                    ? "bg-white text-blue-950"
+                    : "bg-[#E8FBFF] bg-opacity-50 text-black"
+                }`}
+                onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+                onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+              >
+                <span>{item}</span>
+              </div>
+            ))}
+ 
+"path/to/infra-image.jpg" 
+ 
+"path/to/security-image.jpg"
+ 
+"path/to/cloud-image.jpg"
+ 
+"path/to/database-image.jpg"
+ 
+"path/to/backend-image.jpg"
+ 
+"path/to/frontend-image.jpg"
+ 
+"path/to/mobile-image.jpg"
+ 
+Node_js_icon.png
+ 
+"mobile",
+    "frontend",
+    "backend",
+    "database",
+    "cloud",
+    "security",
+    "infra & devops",
+ 
+
+                <img src={ios_icon}/>
+ 
+
+  const [isHovered, setIsHovered] = useState(false);
+ 
+<div
+              className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+                isHovered
+                  ? "bg-white text-blue-950"
+                  : "bg-[#E8FBFF] bg-opacity-50 text-black"
+              }`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+            </div>
+            <div
+              className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+                isHovered
+                  ? "bg-white text-blue-950"
+                  : "bg-[#E8FBFF] bg-opacity-50 text-black"
+              }`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+            </div>
+            <div
+              className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+                isHovered
+                  ? "bg-white text-blue-950"
+                  : "bg-[#E8FBFF] bg-opacity-50 text-black"
+              }`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+            </div>
+            <div
+              className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+                isHovered
+                  ? "bg-white text-blue-950"
+                  : "bg-[#E8FBFF] bg-opacity-50 text-black"
+              }`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+            </div>
+            <div
+              className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+                isHovered
+                  ? "bg-white text-blue-950"
+                  : "bg-[#E8FBFF] bg-opacity-50 text-black"
+              }`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+            </div>
+            <div
+              className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+                isHovered
+                  ? "bg-white text-blue-950"
+                  : "bg-[#E8FBFF] bg-opacity-50 text-black"
+              }`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+            </div>
+            <div
+              className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+                isHovered
+                  ? "bg-white text-blue-950"
+                  : "bg-[#E8FBFF] bg-opacity-50 text-black"
+              }`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+            </div>
+ 
+
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+ 
+ <div
+            className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+              isHovered
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-50 text-black"
+            }`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+          </div>
+ 
+
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+          <div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+ 
+
+            <h3 className="text-lg font-semibold">Your Content</h3>
+            <p c lassName="text-sm">
+              Additional details here.
+            </p>
+ 
+  <div
+      className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+        isHovered ? 'bg-white text-blue-950' : 'bg-[#E8FBFF] text-black'
+      }`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <h3 className="text-lg font-semibold">Your Content</h3>
+      <p className="text-sm">Additional details here.</p>
+    </div>
+ 
+<div className=" flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px]  gap-5 bg-[#E8FBFF] rounded-xl"></div>
+ 
+
+            {/* <img src="" className="w-[74px] h-[74px]" /> */}
+            <p className="text-[20px] font-[500] w-[206px] text-center leading-[26px]">
+              {/* Select Your Role and Sign Up */}
+            </p>
+ 
+
+            {/* <img src="" className="w-[74px] h-[74px]" /> */}
+            <p className="text-[20px] font-[500] w-[206px] text-center leading-[26px]">
+              {/* Select Your Role and Sign Up */}
+ 
+ md:mt-20 md:mb-20 mt-16 mb-16
+ 
+
+        <div className="flex flex-wrap flex-row"></div>
+ 
+bg-orange-30
+ 
+ style={{
+        backgroundImage: `linear-gradient(356.01deg, rgba(255, 255, 255, 0.25) 50.8%, rgba(7, 47, 87, 0) 94.58%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(7, 47, 87, 0.45)), url(${hero_image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+ 
+bg-orange-300
+ 
+ style={{
+        backgroundImage: `linear-gradient(356.01deg, rgba(255, 255, 255, 0.25) 50.8%, rgba(7, 47, 87, 0) 94.58%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(7, 47, 87, 0.45)), url(${hero_image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+ 
+
+        <button className="">Free Consulting</button>
+ 
+
+      1
+ 
+
+    <div
+        className="flex w-[100%] lg:justify-center lg:items-center justify-center items-center flex-wrap flex-row lg:h-[509px] md:h[509px] lg:[509px] bg-orange-300 text-white h-[509px] overflow-x-hidden"
+        style={{
+          backgroundImage: `linear-gradient(356.01deg, rgba(7, 47, 87, 0.75) 50.8%, rgba(7, 47, 87, 0) 94.58%), linear-gradient(0deg, rgba(7, 47, 87, 0.45), rgba(7, 47, 87, 0.45)), url(${hero_image})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      ></div>
+ 
+/hero_image.jpg
+ 
+
+    <div className=''>
+    </div>
+ 
+../../assests/team_image.png
+ 
+
+    <div
+      className="flex w-[100%] lg:justify-center lg:items-center justify-center items-center flex-wrap flex-row lg:h-[509px] md:h[509px] lg:[509px] bg-orange-300 text-white h-[509px] overflow-x-hidden"
+      style={{
+        backgroundImage: `linear-gradient(356.05deg, rgba(7, 30, 87, 0.55) 50.8%, rgba(7, 47, 87, 0) 74.58%), linear-gradient(0deg, rgba(7, 47, 50, 0.20), rgba(4, 20, 50, 0.45)), url(${hero_Image_1})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >1</div>
+ 
+
+    <div
+      className="flex w-[100%] lg:justify-center lg:items-center justify-center items-center flex-wrap flex-row lg:h-[509px] md:h[509px] lg:[509px] bg-orange-300 text-white h-[509px] overflow-x-hidden"
+      style={{
+        backgroundImage:"relative bg-cover bg-center" style"background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${hero_Image_1})",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >1</div>
+ 
+ `url(${hero_Image_1})`
+ 
+ `url(${hero_Image_1})`
+ 
+linear-gradient(356.05deg, rgba(7, 30, 87, 0.55) 50.8%, rgba(7, 47, 87, 0) 74.58%), linear-gradient(0deg, rgba(7, 47, 50, 0.20), rgba(4, 20, 50, 0.45)), 
+ 
+1.jpg
+ 
+
+import bg_image from "../../assests/team_image.png"
+ 
+
+import bg_image from "../../assests/team_image.png"
+ 
+
+    <div className=''>
+ 
 // function Navbar() {
 //   const [showPopup, setShowPopup] = useState(null); // Show specific popup by index
 
