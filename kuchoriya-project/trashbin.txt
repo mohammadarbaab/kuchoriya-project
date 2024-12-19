@@ -1,3 +1,1677 @@
+bg-gray-600
+ 
+ <div className="flex md:flex-row flex-col flex-wrap w-full md:w-[80%] bg-gray-600 justify-center items-center">
+        <div className="flex flex-wrap w-[50%]">
+          <div
+            style={{
+              backgroundImage: `url(${content[currentImageIndex].img})`,
+              height: "300px", // Adjust as needed
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            alt="case1"
+            className="w-full rounded-2xl"
+          />
+        </div>
+        <div className="md:w-[50%] flex flex-col flex-wrap md:p-8 md:gap-3 p-8">
+          <h2 className="font-[600] text-[32px] text-gray-900">
+            {content[currentImageIndex].title}
+          </h2>
+          <p className="font-[400] text-[18px] text-gray-800 leading-[30px]">
+            {content[currentImageIndex].text}
+          </p>
+        </div>
+      </div>
+ 
+Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.
+ 
+Fantasy Sports World
+ 
+Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.
+ 
+Fantasy Sports World
+ 
+<h1 className="font-[600] text-[32px]">Drafters King</h1>
+          <p className="font-[400] text-gray-800 leading-[30px]">
+            Drafters king is a fantasy sports platform that allows users to play
+            fantasy sports with different categories It is an online game where
+            users create .....
+          </p>
+ 
+style={{
+              backgroundImage: `url(${content[2].img})`,
+              height: "300px", // You can adjust this height as needed
+              backgroundSize: "cover", // Ensures the image covers the div
+              backgroundPosition: "center", // Centers the background image
+            }}
+ 
+<div
+            style={{ backgroundImage: `url(${content[2].img})` }}
+            alt="case1"
+            className="w-full rounded-2xl"
+          ></div>
+ 
+<div
+            style={{ backgroundImage: `url(${content[2].url})` }}
+            alt="case1"
+            className="w-full rounded-2xl"
+          />
+ 
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+ 
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length); // Looping through slides
+    }, 3000); // Change content every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
+  // Fallback if content array is empty or if `currentIndex` is out of bounds
+  const currentContent = content[currentIndex] || {};
+
+ 
+ <div className="w-full h-au flex flex-row flex-wrap gap-2">
+        {/* Ensure the backgroundImage is applied correctly */}
+        <div
+          className="w-full h-[50px] bg-center rounded-md"
+          style={{
+            backgroundImage: currentContent.img
+              ? `url(${currentContent.img})`
+              : undefined,
+          }}
+        ></div>
+        <div>{currentContent.title || "Loading..."}</div>
+      </div>
+ 
+import React, { useState, useEffect } from "react";
+import case1 from "../../assests/case1.png";
+import case2 from "../../assests/case2.png";
+import case3 from "../../assests/case3.png";
+
+function CaseStudy() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Define content array
+  const content = [
+    {
+      img: case1,
+      title: "Drafters King",
+      text: "Drafters King is a fantasy sports platform that allows users to play fantasy sports with different categories. It is an online game where users create teams and compete in various sports leagues.",
+    },
+    {
+      img: case2,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+    {
+      img: case3,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length); // Looping through slides
+    }, 3000); // Change content every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
+  // Fallback if content array is empty or if `currentIndex` is out of bounds
+  const currentContent = content[currentIndex] || {};
+
+  return (
+    <div className="flex flex-col gap-2 flex-wrap justify-start items-center pb-6">
+      <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-white">
+        <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-blue-950">
+          Case Study
+        </h1>
+        <p className="text-[18px] font-[500] text-black text-justify">
+          We work with a wide variety of clients, from well-known international
+          brands and media organizations to cutting-edge startups and
+          well-funded businesses.
+        </p>
+      </div>
+      <div className="flex flex-row flex-wrap gap-2">
+        {/* Access the image based on currentIndex */}
+        <div
+          className="w-full h-full bg-center rounded-md"
+          style={{
+            backgroundImage: currentContent.img ? `url(${currentContent.img})` : undefined,
+          }}
+        ></div>
+        <div>{currentContent.title || "Loading..."}</div>
+      </div>
+    </div>
+  );
+}
+
+export default CaseStudy;
+
+ 
+import React, { useState, useEffect } from "react";
+import case1 from "../../assests/case1.png";
+import case2 from "../../assests/case2.png";
+import case3 from "../../assests/case3.png";
+
+function CaseStudy() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Define content array
+  const content = [
+    {
+      img: case1,
+      title: "Drafters King",
+      text: "Drafters King is a fantasy sports platform that allows users to play fantasy sports with different categories. It is an online game where users create teams and compete in various sports leagues.",
+    },
+    {
+      img: case2,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+    {
+      img: case3,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length); // Looping through slides
+    }, 3000); // Change content every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
+  // Fallback if content array is empty or if `currentIndex` is out of bounds
+  const currentContent = content[currentIndex] || {};
+
+  return (
+    <div className="flex flex-col gap-2 flex-wrap justify-start items-center pb-6">
+      <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-white">
+        <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-blue-950">
+          Case Study
+        </h1>
+        <p className="text-[18px] font-[500] text-black text-justify">
+          We work with a wide variety of clients, from well-known international
+          brands and media organizations to cutting-edge startups and
+          well-funded businesses.
+        </p>
+      </div>
+      <div className="flex flex-row flex-wrap gap-2">
+        {/* Safely access the image */}
+        <div
+          className="w-full h-full bg-center rounded-md"
+          style={{
+            backgroundImage: content.img
+              ? `url(${content.img})`
+              : undefined,
+          }}
+        ></div>
+        <div>{content.title || "Loading..."}</div>
+      </div>
+    </div>
+  );
+}
+
+export default CaseStudy;
+
+ 
+ <div className="flex flex-row flex-wrap gap-2">
+        <div
+          className="w-full h-full bg-center rounded-md"
+          style={{ backgroundImage: `url(${content.img[0].url})` }}
+        ></div>
+        <div className="">1</div>
+      </div>
+ 
+ const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length); // Looping through slides
+    }, 3000); // Change content every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+  const content = [
+    {
+      img: case1,
+      title: "Drafters King",
+      text: "Drafters King is a fantasy sports platform that allows users to play fantasy sports with different categories. It is an online game where users create teams and compete in various sports leagues.",
+    },
+    {
+      img: case2,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+    {
+      img: case3,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+  ];
+ 
+<div className="w-full h-full bg-center rounded-md" style={{backgroundImage:`url(${content.img[0].url})`}}></div>
+ 
+
+        <img src={case1}></img>
+ 
+<div className="relative w-full overflow-hidden">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`, // Move content left by 100% of the width
+          }}
+        >
+          {content.map((item, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-full flex items-center justify-between p-4"
+            >
+              {/* Left section (Image) */}
+              <div className="w-1/2">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Right section (Text) */}
+              <div className="w-1/2 pl-6">
+                <h2 className="font-bold text-2xl mb-4">{item.title}</h2>
+                <p>{item.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+ 
+/* Add this to your global CSS file if needed */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+ 
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+ 
+import React, { useState, useEffect } from "react";
+import case1 from "../../assests/case1.png";
+import case2 from "../../assests/case2.png";
+import case3 from "../../assests/case3.png";
+
+function CaseStudy() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length);
+        }, 3000); // Change content every 3 seconds
+        return () => clearInterval(interval);
+    }, []);
+
+    const content = [
+        {
+            img: case1,
+            title: "Drafters King",
+            text: "Drafters King is a fantasy sports platform that allows users to play fantasy sports with different categories. It is an online game where users create teams and compete in various sports leagues.",
+        },
+        {
+            img: case2,
+            title: "Fantasy Sports World",
+            text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+        },
+        {
+            img: case3,
+            title: "Fantasy Sports World",
+            text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+        },
+    ];
+
+    return (
+        <div className="flex flex-col gap-2 flex-wrap justify-start items-center pb-6">
+            <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-white">
+                <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-blue-950">
+                    Case Study
+                </h1>
+                <p className="text-[18px] font-[500] text-black text-justify">
+                    We work with a wide variety of clients, from well-known international
+                    brands and media organizations to cutting-edge startups and
+                    well-funded businesses.
+                </p>
+            </div>
+            <div className="relative w-full overflow-hidden">
+                <div
+                    className="flex transition-transform duration-1000 ease-in-out"
+                    style={{
+                        transform: `translateX(-${currentIndex * 100}%)`,
+                    }}
+                >
+                    {content.map((item, index) => (
+                        <div
+                            key={index}
+                            className="flex-shrink-0 w-full flex items-center justify-between p-4"
+                        >
+                            {/* Left section (Image) */}
+                            <div className="w-1/2">
+                                <img
+                                    src={item.img}
+                                    alt={item.title}
+                                    className="w-full h-auto object-cover"
+                                />
+                            </div>
+
+                            {/* Right section (Text) */}
+                            <div className="w-1/2 pl-6">
+                                <h2 className="font-bold text-2xl mb-4">{item.title}</h2>
+                                <p>{item.text}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default CaseStudy;
+
+ 
+import React, { useState, useEffect } from "react";
+import case1 from "../../assests/case1.png";
+import case2 from "../../assests/case2.png";
+import case3 from "../../assests/case3.png";
+
+function CaseStudy() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) => {
+            console.log("Current Index: ", prevIndex);  // Log the current index
+            return (prevIndex + 1) % content.length;
+          });
+        }, 3000); // Change content every 3 seconds
+        return () => clearInterval(interval);
+      }, []);
+
+  const content = [
+    {
+      img: case1,
+      title: "Drafters King",
+      text: "Drafters King is a fantasy sports platform that allows users to play fantasy sports with different categories. It is an online game where users create teams and compete in various sports leagues.",
+    },
+    {
+      img: case2,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+    {
+      img: case3,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+    // Add more content here if needed
+  ];
+
+  return (
+    <div className="flex flex-col gap-2 flex-wrap justify-start items-center pb-6">
+      <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-white">
+        <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-blue-950">
+          Case Study
+        </h1>
+        <p className="text-[18px] font-[500] text-black text-justify">
+          We work with a wide variety of clients, from well-known international
+          brands and media organizations to cutting-edge startups and
+          well-funded businesses.
+        </p>
+      </div>
+      <div className="relative w-full">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {content.map((item, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-full flex items-center justify-between p-4"
+            >
+              {/* Left section (Image) */}
+              <div className="w-1/2">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Right section (Text) */}
+              <div className="w-1/2 pl-6">
+                <h2 className="font-bold text-2xl mb-4">{item.title}</h2>
+                <p>{item.text}</p>
+              </div>
+
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default CaseStudy;
+
+ 
+import React, { useState, useEffect } from "react";
+import case1 from "../../assests/case1.png";
+import case2 from "../../assests/case2.png";
+import case3 from "../../assests/case3.png";
+
+function CaseStudy() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) => {
+            console.log("Current Index: ", prevIndex);  // Log the current index
+            return (prevIndex + 1) % content.length;
+          });
+        }, 3000); // Change content every 3 seconds
+        return () => clearInterval(interval);
+      }, []);
+
+  const content = [
+    {
+      img: case1,
+      title: "Drafters King",
+      text: "Drafters King is a fantasy sports platform that allows users to play fantasy sports with different categories. It is an online game where users create teams and compete in various sports leagues.",
+    },
+    {
+      img: case2,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+    {
+      img: case3,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+    // Add more content here if needed
+  ];
+
+  return (
+    <div className="flex flex-col gap-2 flex-wrap justify-start items-center pb-6">
+      <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-white">
+        <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-blue-950">
+          Case Study
+        </h1>
+        <p className="text-[18px] font-[500] text-black text-justify">
+          We work with a wide variety of clients, from well-known international
+          brands and media organizations to cutting-edge startups and
+          well-funded businesses.
+        </p>
+      </div>
+      <div className="relative w-full">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {content.map((item, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-full flex items-center justify-between p-4"
+            >
+              {/* Left section (Image) */}
+              <div className="w-1/2">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Right section (Text) */}
+              <div className="w-1/2 pl-6">
+                <h2 className="font-bold text-2xl mb-4">{item.title}</h2>
+                <p>{item.text}</p>
+              </div>
+
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default CaseStudy;
+
+ 
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) => {
+            console.log("Current Index: ", prevIndex);  // Log the current index
+            return (prevIndex + 1) % content.length;
+          });
+        }, 3000); // Change content every 3 seconds
+        return () => clearInterval(interval);
+      }, []);
+ 
+ <div className="relative overflow-hidden w-full">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {content.map((item, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-full flex items-center justify-between p-4"
+            >
+              {/* Left section (Image) */}
+              <div className="w-1/2">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Right section (Text) */}
+              <div className="w-1/2 pl-6">
+                <h2 className="font-bold text-2xl mb-4">{item.title}</h2>
+                <p>{item.text}</p>
+              </div>
+
+            </div>
+          ))}
+        </div>
+      </div>
+ 
+useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length);
+    }, 3000); // Change content every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal overflow */
+html,
+body {
+  overflow-x: hidden; /* Horizontal overflow ko hide karne ke liye */
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Add this to your global CSS file if needed */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+ 
+import React, { useState, useEffect } from "react";
+import case1 from "../../assests/case1.png";
+import case2 from "../../assests/case2.png";
+import case3 from "../../assests/case3.png";
+
+function CaseStudy() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length);
+        }, 3000); // Change content every 3 seconds
+        return () => clearInterval(interval);
+      }, []);
+
+  const content = [
+    {
+      img: case1,
+      title: "Drafters King",
+      text: "Drafters King is a fantasy sports platform that allows users to play fantasy sports with different categories. It is an online game where users create teams and compete in various sports leagues.",
+    },
+    {
+      img: case2,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+    {
+      img: case3,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+    // Add more content here
+  ];
+
+  return (
+    <div className="flex flex-col gap-2 flex-wrap justify-start items-center pb-6">
+      <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-white">
+        <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-blue-950">
+          Case Study
+        </h1>
+        <p className="text-[18px] font-[500] text-black text-justify">
+          We work with a wide variety of clients, from well-known international
+          brands and media organizations to cutting-edge startups and
+          well-funded businesses.
+        </p>
+      </div>
+      <div className="flex flex-col gap-2 flex-wrap justify-start items-center pb-6">
+      <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-white">
+        <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-blue-950">
+          Case Study
+        </h1>
+        <p className="text-[18px] font-[500] text-black text-justify">
+          We work with a wide variety of clients, from well-known international
+          brands and media organizations to cutting-edge startups and
+          well-funded businesses.
+        </p>
+      </div>
+      <div className="relative overflow-hidden w-full">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {content.map((item, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-full flex items-center justify-between p-4"
+            >
+              {/* Left section (Image) */}
+              <div className="w-1/2">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Right section (Text) */}
+              <div className="w-1/2 pl-6">
+                <h2 className="font-bold text-2xl mb-4">{item.title}</h2>
+                <p>{item.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    </div>
+  );
+}
+
+export default CaseStudy;
+
+ 
+  <div className="relative overflow-hidden w-full">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {content.map((item, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-full flex items-center justify-between p-4"
+            >
+              {/* Left section (Image) */}
+              <div className="w-1/2">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Right section (Text) */}
+              <div className="w-1/2 pl-6">
+                <h2 className="font-bold text-2xl mb-4">{item.title}</h2>
+                <p>{item.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+ 
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length);
+    }, 3000); // Change content every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+ 
+<div className="relative overflow-hidden w-full">
+        <div
+          className="flex transition-transform duration-1000 ease-in-out"
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`,
+          }}
+        >
+          {content.map((item, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-full flex items-center justify-between p-4"
+            >
+              {/* Left section (Image) */}
+              <div className="w-1/2">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Right section (Text) */}
+              <div className="w-1/2 pl-6">
+                <h2 className="font-bold text-2xl mb-4">{item.title}</h2>
+                <p>{item.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+ 
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length);
+    }, 3000); // Change content every 6 seconds (3s for display, 3s for animation)
+    return () => clearInterval(interval);
+  }, []);
+ 
+  <div className="relative overflow-hidden">
+      {content.map((item, index) => (
+        <div
+          key={index}
+          className={`flex items-center transition-all duration-1000 ease-in-out ${
+            index === currentIndex
+              ? "opacity-100 translate-x-0"
+              : "opacity-0 translate-x-full"
+          }`}
+        >
+          {/* Left section (Image) */}
+          <div className="w-1/2 p-4">
+            <img src={item.img} alt={item.title} className="w-full h-auto" />
+          </div>
+
+          {/* Right section (Text) */}
+          <div className="w-1/2 p-4 text-lg">
+            <h2 className="font-bold text-2xl mb-4">{item.title}</h2>
+            <p>{item.text}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+ 
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length);
+    }, 6000); // Change content every 6 seconds (3s for display, 3s for animation)
+    return () => clearInterval(interval);
+  }, []);
+ 
+
+
+      {/* Content Slider */}
+      <div
+        className="relative w-[80%] bg-orange-500 grid grid-cols-2 transition-all duration-1000 ease-in-out"
+        style={{
+          transform: `translateX(-${currentIndex * 100}%)`,
+        }}
+      >
+        {/* Image Section */}
+        <img
+          src={content[currentIndex].img}
+          alt="Case Study"
+          className="w-full object-cover"
+        />
+
+        {/* Text Section */}
+        <div className="flex flex-col gap-2 justify-start items-start p-6">
+          <h1 className="font-[600] text-[32px]">
+            {content[currentIndex].title}
+          </h1>
+          <p className="text-[20px] text-justify">
+            {content[currentIndex].text}
+          </p>
+        </div>
+      </div>
+ 
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+ 
+ // Change the slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length);
+    }, 3000);
+
+    return () => clearInterval(interval); // Cleanup the interval
+  }, [content.length]);
+
+ 
+import React, { useState, useEffect } from "react";
+import case1 from "../../assests/case1.png";
+import case2 from "../../assests/case2.png";
+import case3 from "../../assests/case3.png";
+
+function CaseStudy() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const content = [
+    {
+      img: case1,
+      title: "Drafters King",
+      text: "Drafters King is a fantasy sports platform that allows users to play fantasy sports with different categories. It is an online game where users create teams and compete in various sports leagues.",
+    },
+    {
+      img: case2,
+      title: "Fantasy Sports World",
+      text: "Fantasy Sports World provides a dynamic platform for users to join fantasy leagues and win exciting rewards. It focuses on offering a wide range of sports including cricket, football, and basketball.",
+    },
+    // Add more content here
+  ];
+
+  // Change the slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length);
+    }, 3000);
+
+    return () => clearInterval(interval); // Cleanup the interval
+  }, [content.length]);
+
+  return (
+    <div className="flex flex-col gap-2 flex-wrap justify-start items-center pb-6">
+      <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-white">
+        <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-blue-950">
+          Case Study
+        </h1>
+        <p className="text-[18px] font-[500] text-black text-justify">
+          We work with a wide variety of clients, from well-known international
+          brands and media organizations to cutting-edge startups and
+          well-funded businesses.
+        </p>
+      </div>
+
+      {/* Content Slider */}
+      <div
+        className="relative w-[80%] bg-orange-500 grid grid-cols-2 transition-all duration-1000 ease-in-out"
+        style={{
+          transform: `translateX(-${currentIndex * 100}%)`,
+        }}
+      >
+        {/* Image Section */}
+        <img
+          src={content[currentIndex].img}
+          alt="Case Study"
+          className="w-full object-cover"
+        />
+
+        {/* Text Section */}
+        <div className="flex flex-col gap-2 justify-start items-start p-6">
+          <h1 className="font-[600] text-[32px]">
+            {content[currentIndex].title}
+          </h1>
+          <p className="text-[20px] text-justify">
+            {content[currentIndex].text}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default CaseStudy;
+
+ 
+// Add more images as needed
+ 
+../../assests/case2.png
+ 
+import React from "react";
+import case1 from "../../assests/case1.png";
+
+function CaseStudy() {
+  return (
+    <div className="flex flex-col gap-2 flex-wrap justify-start items-center pb-6">
+      <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-white">
+        <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-blue-950">
+          Case Study
+        </h1>
+        <p className="text-[18px] font-[500] text-black text-justify">
+          We work with a wide variety of clients, from well-known international
+          brands and media organizations to cutting-edge startups and
+          well-funded businesses.
+        </p>
+      </div>
+      <div className="grid grid-cols-2 bg-orange-500 w-[80%]">
+        <img src={case1} alt="case study" className="w-[100%]" />
+        <div className="flex flex-col gap-2 justify-start items-start p-6">
+          <h1 className="font-[600] text-[32px]">Drafters King</h1>
+          <p className="text-[20px] text-justify">
+            Drafters king is a fantasy sports platform that allows users to play
+            fantasy sports with different categories It is an online game where
+            users create ....
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default CaseStudy;
+
+ 
+ <div className="grid grid-cols-2 bg-orange-500 w-[80%]">
+        <img src={case1} alt="case study" className="w-[100%]" />
+        <div className="flex flex-col gap-2 justify-start items-start p-6">
+          <h1 className="font-[600] text-[32px]">Drafters King</h1>
+          <p className="text-[20px] text-justify">
+            Drafters king is a fantasy sports platform that allows users to play
+            fantasy sports with different categories It is an online game where
+            users create ....
+          </p>
+        </div>
+      </div>
+ 
+
+          <button>Vi</button>
+ 
+ md:px-36
+ 
+It's crucial to collaborate with specialists who are knowledgeable
+          about the newest technologies in today's quickly increasing digital
+          landscape.
+ 
+<span className="text-[#F54D4D]">We work with</span>
+ 
+  <div className="flex flex-col gap-2 justify-center items-center">
+        <h1 className="font-[600] text-[28px]">Case Study</h1>
+        <p className="flex flex-row flex-wrap font-[400] text-[18px] text-justify">
+          We work with a wide variety of clients, from well-known international
+          brands and media organizations to cutting-edge startups and
+          well-funded businesses.
+        </p>
+      </div>
+ 
+
+// import items from "../../Components/Services/ServiceData";
+ 
+../../assests/MySQL_icon.png
+ 
+../../assests/IOS-icon.png
+ 
+../../assests/IOS-icon.png
+ 
+../../assests/content-management-system.png
+ 
+../../assests/devops.png
+ 
+../../Components/Services/ServiceData
+ 
+../../assests/react_js_icon.png
+ 
+/react_js_icon.png
+ 
+/ServiceData
+ 
+/devops.png
+ 
+/content-management-system.png
+ 
+/IOS-icon.png
+ 
+/database-storage.png
+ 
+/MySQL_icon.png
+ 
+export default const items = [
+    {
+      icon: mobileIcon,
+      text: "Mobile Development",
+      description: `We build functional and engaging web products for businesses in diverse industries. Our broad scope of technologies allows us to select the best-fit approach for your specific project. Our engineers create progressive web apps, AR-powered e-commerce stores, and more.`,
+      technologies: [
+        {
+          name: "IOS",
+        },
+        {
+          name: "Android",
+        },
+        {
+          name: "Flutter",
+        },
+        {
+          name: "Ionic",
+        },
+        {
+          name: "React Native",
+        },
+        {
+          name: "Xamarin",
+        },
+      ],
+    },
+    {
+      icon: frontendIcon,
+      text: "frontend",
+      description: `Intellectsoft provides custom mobile development application services. Increase your sales and clients’ loyalty with a stable, interactive, and high-performance mobile app. Mobile App Development Services, iOS App Development Services, Android App Development Services, Hybrid App Development Services.`,
+      technologies: [
+        {
+          name: "Angular Js",
+        },
+        { name: "Android" },
+        {
+          name: "ReactJs",
+        },
+        {
+          name: "Typescript",
+        },
+        {
+          name: "Bootstrap",
+        },
+        {
+          name: "Vue",
+        },
+        {
+          name: "HTML",
+        },
+        {
+          name: "Kotlin",
+        },
+      ],
+    },
+    {
+      icon: database,
+      text: "Databse",
+      description: `Intellectsoft provides custom mobile development application services. Increase your sales and clients’ loyalty with a stable, interactive, and high-performance mobile app. Mobile App Development Services, iOS App Development Services, Android App Development Services, Hybrid App Development Services.`,
+      technologies: [
+        {
+          name: "Mongo db",
+        },
+        { name: "MySQL" },
+        {
+          name: "React Native",
+        },
+        {
+          name: "Firebase",
+        },
+        {
+          name: "AWS Daynamobd",
+        },
+        {
+          name: "Realm",
+        },
+        {
+          name: "Oracle",
+        },
+        {
+          name: "Postgresql",
+        },
+        {
+          name: "Redis",
+        },
+      ],
+    },
+    {
+      icon: cms,
+      text: "cms",
+      description: `Intellectsoft provides custom mobile development application services. Increase your sales and clients’ loyalty with a stable, interactive, and high-performance mobile app. Mobile App Development Services, iOS App Development Services, Android App Development Services, Hybrid App Development Services.`,
+      technologies: [
+        {
+          name: "Drupal",
+        },
+        { name: "MySQL" },
+        {
+          name: "Joomla",
+        },
+        {
+          name: "Wordpress",
+        },
+        {
+          name: "Magento",
+          description:
+            "A framework for building cross-platform mobile apps using web technologies.",
+        },
+        {
+          name: "Shopify",
+        },
+        {
+          name: "Mandix",
+        },
+      ],
+    },
+    {
+      icon: backendIcon,
+      text: "backend",
+      description: `Intellectsoft provides custom mobile development application services. Increase your sales and clients’ loyalty with a stable, interactive, and high-performance mobile app. Mobile App Development Services, iOS App Development Services, Android App Development Services, Hybrid App Development Services.`,
+      technologies: [
+        {
+          name: "PHP",
+        },
+        { name: "MySQL" },
+        {
+          name: "Java",
+        },
+        {
+          name: "asp.Net",
+        },
+        {
+          name: "Node Js",
+        },
+        {
+          name: "Rails",
+        },
+        {
+          name: "Python",
+        },
+      ],
+    },
+    {
+      icon: devOps,
+      text: "Infra & DevOps",
+      description: `Intellectsoft provides custom mobile development application services. Increase your sales and clients’ loyalty with a stable, interactive, and high-performance mobile app. Mobile App Development Services, iOS App Development Services, Android App Development Services, Hybrid App Development Services.`,
+      technologies: [
+        {
+          name: "AWS Cloud",
+        },
+        {
+          name: "Google Cloud",
+        },
+        {
+          name: "Gradle",
+        },
+        {
+          name: "Jenkins",
+        },
+        {
+          name: "Appium",
+        },
+        {
+          name: "Selenium",
+        },
+      ],
+    },
+  ];
+ 
+
+          description:
+            "The programming language for developing iOS applications.",
+ 
+
+          description:
+            "A framework for building cross-platform mobile apps using web technologies.",
+ 
+
+          description:
+            "A UI toolkit for building natively compiled apps for mobile, web, and desktop.",
+ 
+
+          description:
+            "A framework for building cross-platform mobile apps with React.",
+ 
+
+          description: "Building apps for Android devices.",
+ 
+
+          description:
+            "Development of applications for Apple's iPhone and iPad.",
+ 
+
+          description:
+            "A programming language used for iOS and macOS apps before Swift.",
+ 
+
+          description:
+            "The programming language for developing iOS applications.",
+ 
+
+          description:
+            "A framework for building cross-platform mobile apps using web technologies.",
+ 
+
+          description:
+            "A UI toolkit for building natively compiled apps for mobile, web, and desktop.",
+ 
+
+          description:
+            "A framework for building cross-platform mobile apps with React.",
+ 
+description: "Building apps for Android devices."
+ 
+
+          description:
+            "Development of applications for Apple's iPhone and iPad.",
+ 
+
+          description:
+            "A programming language used for iOS and macOS apps before Swift.",
+ 
+
+          description:
+            "The programming language for developing iOS applications.",
+ 
+
+          description:
+            "A UI toolkit for building natively compiled apps for mobile, web, and desktop.",
+ 
+
+          description:
+            "A framework for building cross-platform mobile apps with React.",
+ 
+ description: "Building apps for Android devices."
+ 
+
+          description:
+            "Development of applications for Apple's iPhone and iPad.",
+ 
+
+          description:
+            "A statically typed programming language for modern Android development.",
+ 
+
+          description:
+            "A statically typed programming language for modern Android development.",
+ 
+
+          description:
+            "A programming language used for iOS and macOS apps before Swift.",
+ 
+
+          description:
+            "The programming language for developing iOS applications.",
+ 
+
+          description:
+            "A framework for building cross-platform mobile apps using web technologies.",
+ 
+
+          description:
+            "A UI toolkit for building natively compiled apps for mobile, web, and desktop.",
+ 
+
+          description:
+            "A framework for building cross-platform mobile apps with React.",
+ 
+description: "Building apps for Android devices."
+ 
+
+          description:
+            "Development of applications for Apple's iPhone and iPad.",
+ 
+
+          description:
+            "A statically typed programming language for modern Android development.",
+ 
+
+          description:
+            "A programming language used for iOS and macOS apps before Swift.",
+ 
+
+          description:
+            "The programming language for developing iOS applications.",
+ 
+
+          description:
+            "A framework for building cross-platform mobile apps using web technologies.",
+ 
+
+          description:
+            "A UI toolkit for building natively compiled apps for mobile, web, and desktop.",
+ 
+
+          description:
+            "A framework for building cross-platform mobile apps with React.",
+ 
+description: "Building apps for Android devices."
+ 
+
+          description:
+            "Development of applications for Apple's iPhone and iPad.",
+ 
+
+          description: "A superset of JavaScript that adds static types.",
+ 
+
+          description: "The standard markup language for creating web pages.",
+ 
+description: "A CSS framework for building responsive websites.",
+ 
+description: "A progressive JavaScript framework for building UIs.",
+ 
+description: "A JavaScript library for building user interfaces.",
+ 
+description:
+            "A platform for building web applications with TypeScript.",
+ 
+
+                        {/* Technology Description */}
+                        {/* {activeTechIndex === techIndex && (
+                          <p className="text-gray-700 mt-2">
+                            {tech.description}
+                          </p>
+                        )} */}
+ 
+
+          {
+            name: "Python",
+            description:
+              "A programming language used for iOS and macOS apps before Swift.",
+          },
+ 
+  {
+            name: "Postgresql",
+            description:
+              "A statically typed programming language for modern Android development.",
+          },
+          {
+            name: "Redis",
+            description:
+              "A statically typed programming language for modern Android development.",
+          },
+ 
+AWS Daynamobd
+ 
+Firebase
+ 
+React Native
+ 
+Mongo db
+ 
+/firebase_icon.png
+ 
+
+import webdev_icon from "../../assests/webdevicon.svg";
+ 
+
+import mobileDev from "../../assests/mobiledev.svg";
+ 
+ bg-gray-700
+ 
+ {items.map((item, index) => (
+  <div
+    key={index}
+    className="flex flex-row gap-4 w-[80%] bg-[#f5f5f5] justify-between flex-wrap items-center p-2 rounded-md"
+  >
+    {/* Category Header with Icon and Text */}
+    <div className="flex flex-row flex-wrap gap-4 items-center">
+      <img
+        src={item.icon}
+        alt={item.text}
+        className="cursor-pointer"
+        onClick={() => toggleDescription(index)} // Click handler for toggling
+      />
+      <p className="text-blue-950 font-[600]">{item.text}</p>
+    </div>
+
+    {/* Arrow Icon to Toggle Description */}
+    <img
+      src={downArrow}
+      alt="arrow_logo"
+      className="w-[25px] h-[25px] cursor-pointer"
+      onClick={() => toggleDescription(index)} // Also toggling on arrow click
+    />
+
+    {/* Conditionally render the description text */}
+    {openIndex === index && (
+      <div className="text-black text-justify px-2 font-[500] text-[16px] mt-2">
+        <p>{item.description}</p>
+      </div>
+    )}
+  </div>
+))}
+ 
+ {openIndex === index && (
+      <div className="text-black text-justify px-2 font-[500] text-[16px] mt-2">
+        <p>{item.description}</p>
+      </div>
+    )}
+  </div>
+))}
+ 
+{items.map((item, index) => (
+        <div
+          key={index}
+          className="flex flex-row gap-4 w-[80%] bg-[#f5f5f5] justify-between flex-wrap items-center p-2 rounded-md"
+        >
+          <div className="flex flex-row flex-wrap gap-4 items-center">
+            <img
+              src={item.icon}
+              alt={item.text}
+              onClick={() => toggleDescription(index)} // Click handler for toggling
+            />
+            <p className="text-blue-950 font-[600]">{item.text}</p>
+          </div>
+          <img
+            src={downArrow}
+            alt="arrow_logo"
+            className="w-[25px] h-[25px] cursor-pointer"
+            onClick={() => toggleDescription(index)} // Also toggling on arrow click
+          />
+          
+          {/* Conditionally render the description text */}
+          {openIndex === index && (
+            <div className=" text-black text-justify px-2 font-[500] text-[16px]">
+              <p>{item.description}</p>
+            </div>
+          )}
+        </div>
+      ))}
+ 
+ {items.map((item, index) => (
+        <div
+          key={index}
+          className="flex flex-row gap-4 w-[80%] bg-[#f5f5f5] justify-between flex-wrap items-center p-2 rounded-md"
+        >
+          <div className="flex flex-row flex-wrap gap-4 items-center">
+            <img
+              src={item.icon}
+              alt={item.text}
+              onClick={() => toggleDescription(index)} // Click handler for toggling
+            />
+            <p className="text-blue-950 font-[600]">{item.text}</p>
+          </div>
+          <img
+            src={downArrow}
+            alt="arrow_logo"
+            className="w-[25px] h-[25px] cursor-pointer"
+            onClick={() => toggleDescription(index)} // Also toggling on arrow click
+          />
+          
+          {/* Conditionally render the description text */}
+          {openIndex === index && (
+            <div className=" text-black text-justify px-2 font-[500] text-[16px]">
+              <p>{item.description}</p>
+            </div>
+          )}
+        </div>
+      ))}
+ 
+ {items.map((item, index) => (
+        <div
+          key={index}
+          className="flex flex-row gap-4 w-[80%] bg-[#f5f5f5] justify-between flex-wrap items-center p-2 rounded-md"
+        >
+          <div className="flex flex-row flex-wrap gap-4 items-center">
+            <img
+              src={item.icon}
+              alt={item.text}
+              onClick={() => toggleDescription(index)} // Click handler for toggling
+            />
+            <p className="text-blue-950 font-[600]">{item.text}</p>
+          </div>
+          <img
+            src={downArrow}
+            alt="arrow_logo"
+            className="w-[25px] h-[25px] cursor-pointer"
+            onClick={() => toggleDescription(index)} // Also toggling on arrow click
+          />
+          
+          {/* Conditionally render the description text */}
+          {openIndex === index && (
+            <div className=" text-black text-justify px-2 font-[500] text-[16px]">
+              <p>{item.description}</p>
+            </div>
+          )}
+        </div>
+      ))}
+ 
+const items = [
+        {
+          icon: webdev_icon,
+          text: "Web Development",
+          description: `We build functional and engaging web products for businesses in diverse industries. Our broad scope of technologies allows us to select the best-fit approach for your specific project. Our engineers create progressive web apps, AR-powered e-commerce stores, and more.`,
+        },
+        {
+          icon: mobileDev,
+          text: "Mobile Development",
+          description: `Intellectsoft provides custom mobile development application services. Increase your sales and clients’ loyalty with a stable, interactive, and high-performance mobile app. Mobile App Development Services, iOS App Development Services, Android App Development Services, Hybrid App Development Services.`,
+        },
+      ];
+ 
+
+              <ul>
+                li
+              </ul>
+ 
+bg-red-500
+ 
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-row gap-4 w-[80%] bg-red-500 justify-between flex-wrap items-center"
+          >
+            <div className="flex flex-row flex-wrap gap-4 items-center">
+              <img src={item.icon} alt={item.text} />
+              <p className="text-white font-[500]">{item.text}</p>
+            </div>
+            <img
+              src={downArrow}
+              alt="arrow_logo"
+              className="w-[25px] h-[25px]"
+            />
+          </div>
+        ))}
+ 
+ const items = [
+    { icon: webdev_icon, text: "Web Development" },
+    { icon: mobileDev, text: "Mobile Development" },
+  ];
+ 
+ <div className="flex flex-row gap-4 w-[80%] bg-red-500 justify-between flex-wrap items-center">
+          <div className="flex flex-row flex-wrap gap-4 items-center">
+            <img src={webdev_icon} alt="webdev" />
+            <p className="text-white font-[500]">Web Development</p>
+          </div>
+          <img src={downArrow} alt="arrow_logo" className="w-[25px] h-[25px]" />
+        </div>
+        <div className="flex flex-row gap-4 w-[80%] bg-red-500 justify-between flex-wrap items-center">
+          <div className="flex flex-row flex-wrap gap-4 items-center">
+            <img src={mobileDev} alt="webdev" />
+            <p className="text-white font-[500]">Mobile Development</p>
+          </div>
+          <img src={downArrow} alt="arrow_logo" className="w-[25px] h-[25px]" />
+        </div>
+ 
+ <div className="flex flex-row gap-4 w-[80%] bg-red-500 justify-between flex-wrap items-center">
+          <div className="flex flex-row flex-wrap gap-4 items-center">
+            <img src={webdev_icon} alt="webdev" />
+            <p className="text-white font-[500]">Web Development</p>
+          </div>
+          <img src={downArrow} alt="arrow_logo" className="w-[25px] h-[25px]" />
+        </div>
+        <div className="flex flex-row gap-4 w-[80%] bg-red-500 justify-between flex-wrap items-center">
+          <div className="flex flex-row flex-wrap gap-4 items-center">
+            <img src={mobileDev} alt="webdev" />
+            <p className="text-white font-[500]">Mobile Development</p>
+          </div>
+          <img src={downArrow} alt="arrow_logo" className="w-[25px] h-[25px]" />
+        </div>
+ 
+
+        <div className=""></div>
+ 
+
+        <div className="bg-orange-400 w-full px-36">1</div>
+ 
+
+      <div className="">1</div>
+      <div className="">1</div>
+ 
+We offer collaboration that is tailored to your needs.We provide
+          everything you need,whether you need a single developer or
+          full-fledged project team.Our three partnership models were specially
+          developed to meet the particular needs of businesses and increase
+          client revenues.
+ 
+Partnership Models
+ 
+
+    <div className='flex flex-col gap-2'>1</div>
+ 
+
+    <div>
+ 
 bg-orange-400
  
 bg-red-400

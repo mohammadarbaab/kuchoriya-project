@@ -10,7 +10,7 @@ function Partnrship() {
         <h1 className="text-[36px] font-[700] text-center leading-[40px]">
           Partnership Models
         </h1>
-        <p className="text-[18px] font-[500] text-gray-800 text-justify">
+        <p className="text-[18px] font-[500] text-gray-500 text-justify">
           We offer collaboration that is tailored to your needs.We provide
           everything you need,whether you need a single developer or
           full-fledged project team.Our three partnership models were specially
@@ -18,7 +18,7 @@ function Partnrship() {
           client revenues.
         </p>
       </div>
-      <div className="flex flex-wrap flex-row gap-2 justify-center items-center px-4">
+      <div className="flex flex-wrap flex-row md:gap-2 justify-center items-center px-4 gap-4">
         <div className="flex flex-wrap flex-col items-center w-[300px] h-[350px] gap-4 bg-[#3b82f6] animate-pulse hover:scale-105 hover:shadow-lg transition-all rounded-xl px-5 py-4">
           {/* Image */}
           <img
