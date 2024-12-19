@@ -1,3 +1,471 @@
+  <div className="flex flex-wrap justify-center items-center flex-row gap-6">
+          <img src={clutchIcon} alt="clutchIcon" className="w-[100px]" />
+          <img src={goodfilms} alt="goodfilms" className="w-[100px]" />
+          <img src={trustIcon} alt="trust_icon" className="w-[100px]" />
+          <img src={desiIcon} alt="desiicon" className="w-[100px]" />
+          <img src={sortlist} alt="sort_icon" className="w-[100px]" />
+          <img src={seos} alt="seos_icon" className="w-[100px]" />
+          <img src={findBest} alt="findbest_icon" className="w-[100px]" />
+        </div>
+ 
+ <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+ 
+<img src="" alt="clint_1" />
+ 
+md
+ 
+<div className="flex flex-wrap justify-center py-6 gap-6 px-16">
+        {testimonials.map((testimonial, index) => (
+          <div
+            key={index}
+            className="flex md:flex-row flex-col gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[48%] shadow-lg shadow-[#e1e1e1] bg-blue-950"
+          >
+            {/* Image Section */}
+            <div className="flex flex-row gap-6 items-center">
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="w-[100px] h-[100px] rounded-full border-4 border-[#f3f3f3] shadow-lg"
+              />
+              <div className="flex flex-col gap-2">
+                <h1 className="font-semibold text-[24px] text-white">
+                  {testimonial.name}
+                </h1>
+                <p className="font-medium text-[18px] text-yellow-300">
+                  {testimonial.position}
+                </p>
+              </div>
+            </div>
+
+            {/* Description Section */}
+            <p className="text-gray-300 text-justify mt-4 leading-relaxed">
+              {testimonial.description}
+            </p>
+          </div>
+        ))}
+      </div>
+ 
+ <div className="flex flex-col gap-2 flex-wrap justify-center items-center bg-blue-950 py-6">
+      {testimonials.map((testimonial, index) => (
+        <div
+          key={index}
+          className="flex flex-row gap-6 flex-wrap w-[100%] py-6 px-16 justify-center items-center"
+        >
+          <div className="flex flex-row gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[40%] shadow-lg shadow-[#e1e1e1] bg-blue-950">
+            {/* Image Section */}
+            <div className="flex flex-row gap-6 items-center">
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="w-[100px] h-[100px] rounded-full border-4 border-[#f3f3f3] shadow-lg"
+              />
+              <div className="flex flex-col gap-2">
+                <h1 className="font-semibold text-[24px] text-white">
+                  {testimonial.name}
+                </h1>
+                <p className="font-medium text-[18px] text-yellow-300">
+                  {testimonial.position}
+                </p>
+              </div>
+            </div>
+
+            {/* Description Section */}
+            <p className="text-gray-300 text-justify mt-4 leading-relaxed">
+              {testimonial.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+ 
+import React from "react";
+import jamesMitchell from "../../assests/owner_1.jpg";
+import adella from "../../assests/adella (1).png";
+import guliliani from "../../assests/guliliani.png";
+import simone from "../../assests/simone.png";
+function Owner() {
+    const testimonials = [
+        {
+          name: "James Mitchell",
+          position: "CEO",
+          image: jamesMitchell,
+          description: "Initially, I was skeptical, given how many scams start with a LinkedIn approach, especially when the solution is overseas and involves 'clicking on this link.' However, this was different. From the initial consultation to the completion of phase I, Alex and his team were professional, insightful, and enjoyable to work with. They excel at thinking outside the box and providing multiple solutions to the roadblocks we encountered. I highly recommend this team of professionals and look forward to working with them as we add more components to our SaaS and mobile solution."
+        },
+        {
+          name: "Guiliani",
+          position: "Principal Software Engineer",
+          image: guliliani,
+          description: "I took services from one of their full-stack Developers for over 5 months co-developing a web application in Angular 4/5 + Node (Kao). Overall, everything was very productive, we finished the project in time with best practices of test-driven development and continuous integration. Throughout, proper version control was practiced. I have had times when requirements were ambiguous, the developer took sensible design decisions without guidance and we never lost momentum on the development. The developer learned new technologies fast, and implemented solutions as close."
+        },
+        {
+          name: "Simone",
+          position: "CEO",
+          image: simone,
+          description: "Working with Kuchoriya Softwares has been a pleasure. The Kuchoriya Softwares team got our work done without any issues or problems. They were very open to accommodating the changes that we made during the project. They carefully reviewed our requirements and delivered on time and within budget! The best part of working with Kuchoriya Softwares was that they remained available throughout the entire project, responding quickly to emails, and ensuring that we were getting the work that we wanted every step of the way. We would hire them again for future projects."
+        },
+        {
+          name: "Adelle",
+          position: "Co-Founder",
+          image: adella,
+          description: "Kuchoriya Softwares helped us with the design and development of our company's new App & Web called 'Singaporeair.' The entire team was very engaged and always very timely in their responses. They helped Singaporeair, Corp develop this Insurance App & web within a few months. They helped in the development and are also going to be part of the marketing and maintenance of the App. We were very excited when this App won the GOLD in the Best Insurance Apps category recently. A very professional and reliable team to work with. We would hire them again for future projects."
+        }
+      ];
+  return (
+    <div className="flex flex-col gap-2 flex-wrap justify-center items-center bg-blue-950 py-6">
+      <div className="flex flex-row gap-6 flex-wrap w-[100%] py-6 px-16 justify-center items-center">
+        <div className="flex flex-row gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[40%] shadow-lg shadow-[#e1e1e1] bg-blue-950">
+          {/* Image Section */}
+          <div className="flex flex-row gap-6 items-center">
+            <img
+              src={jamesMitchell}
+              alt="James Mitchell"
+              className="w-[100px] h-[100px] rounded-full border-4 border-[#f3f3f3] shadow-lg"
+            />
+            <div className="flex flex-col gap-2">
+              <h1 className="font-semibold text-[24px] text-white">
+                James Mitchell
+              </h1>
+              <p className="font-medium text-[18px] text-yellow-300">CEO</p>
+            </div>
+          </div>
+
+          {/* Description Section */}
+          <p className="text-gray-300 text-justify mt-4 leading-relaxed">
+            Initially, I was skeptical, given how many scams start with a
+            LinkedIn approach, especially when the solution is overseas and
+            involves "clicking on this link." However, this was different. From
+            the initial consultation to the completion of phase I, Alex and his
+            team were professional, insightful, and enjoyable to work with. They
+            excel at thinking outside the box and providing multiple solutions
+            to the roadblocks we encountered. I highly recommend this team of
+            professionals and look forward to working with them as we add more
+            components to our SaaS and mobile solution.
+          </p>
+        </div>
+        <div className="flex flex-row gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[40%] shadow-lg shadow-[#e1e1e1] bg-blue-950">
+          {/* Image Section */}
+          <div className="flex flex-row gap-6 items-center">
+            <img
+              src={guliliani}
+              alt="James Mitchell"
+              className="w-[100px] h-[100px] rounded-full border-4 border-[#f3f3f3] shadow-lg"
+            />
+            <div className="flex flex-col gap-2">
+              <h1 className="font-semibold text-[24px] text-white">Guiliani</h1>
+              <p className="font-medium text-[18px] text-yellow-300">
+                Principle Softwere Engineer
+              </p>
+            </div>
+          </div>
+
+          {/* Description Section */}
+          <p className="text-gray-300 text-justify mt-4 leading-relaxed">
+            I took services from one of their full-stack Developers for over 5
+            months co-developing a web application in Angular 4/5 + Node (Kao).
+            Overall, everything was very productive, we finished the project in
+            time with best practices of test-driven development and continuous
+            integration. Throughout, proper version control was practiced. I
+            have had times when requirements were ambiguous, the developer took
+            sensible design decisions without guidance and we never lost
+            momentum on the development. The developer learned new technologies
+            fast, and implemented solutions as close.
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-row gap-6 flex-wrap w-[100%] py-6 px-16 justify-center items-center">
+        <div className="flex flex-row gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[40%] shadow-lg shadow-[#e1e1e1] bg-blue-950">
+          {/* Image Section */}
+          <div className="flex flex-row gap-6 items-center">
+            <img
+              src={simone}
+              alt="James Mitchell"
+              className="w-[100px] h-[100px] rounded-full border-4 border-[#f3f3f3] shadow-lg"
+            />
+            <div className="flex flex-col gap-2">
+              <h1 className="font-semibold text-[24px] text-white">simone</h1>
+              <p className="font-medium text-[18px] text-yellow-300">CEO</p>
+            </div>
+          </div>
+
+          {/* Description Section */}
+          <p className="text-gray-300 text-justify mt-4 leading-relaxed">
+            Working with Kuchoriya Softwares has been a pleasure. The Kuchoriya
+            Softwares team got our work done without any issues or problems.
+            They were very open to accommodating the changes that we made during
+            the project was going on. They carefully reviewed our requirements
+            and delivered on time and within budget! The best part of working
+            with Kuchoriya Softwares was that they remained available throughout
+            the entire project, responding quickly to emails, and ensuring that
+            we were getting the work that we wanted every step of the way. We
+            would hire them again for future projects.
+          </p>
+        </div>
+        <div className="flex flex-row gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[40%] shadow-lg shadow-[#e1e1e1] bg-blue-950">
+          {/* Image Section */}
+          <div className="flex flex-row gap-6 items-center">
+            <img
+              src={adella}
+              alt="James Mitchell"
+              className="w-[100px] h-[100px] rounded-full border-4 border-[#f3f3f3] shadow-lg"
+            />
+            <div className="flex flex-col gap-2">
+              <h1 className="font-semibold text-[24px] text-white">Adelle</h1>
+              <p className="font-medium text-[18px] text-yellow-300">
+                Co Founder
+              </p>
+            </div>
+          </div>
+
+          {/* Description Section */}
+          <p className="text-gray-300 text-justify mt-4 leading-relaxed">
+            Kuchoriya Softwares. the team helped us with the design and
+            development of our company's new App & Web called "Singaporeair".
+            The entire team was very engaged and always very timely in their
+            responses. They helped Singaporeair, Corp develop this Insurance App
+            & web within a few months. They helped in the development and are
+            also going to be part of the marketing and maintenance of the App.
+            We were very excited when this App won the GOLD in the Best
+            Insurance Apps category recently. A very professional and reliable
+            team to work with. We would hire them again for future projects.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Owner;
+
+ 
+Kuchoriya Softwares. the team helped us with the design and development of our company's new App & Web called "Singaporeair". The entire team was very engaged and always very timely in their responses. They helped Singaporeair, Corp develop this Insurance App & web within a few months. They helped in the development and are also going to be part of the marketing and maintenance of the App. We were very excited when this App won the GOLD in the Best Insurance Apps category recently. A very professional and reliable team to work with. We would hire them again for future projects.
+ 
+Kuchoriya Softwares. the team helped us with the design and
+            development of our company's new App & Web called "Singaporeair".
+            The entire team was very engaged and always very timely in their
+            responses. They helped Singaporeair, Corp develop this Insurance App
+            & web within a few months. They helped in the development and are
+            also going to be part of the marketing and maintenance of the App.
+            We were very excited when this App won the GOLD in the Best
+            Insurance Apps category recently. A very professional and reliable
+            team to work with. We would hire them again for future projects.
+ 
+Working with Kuchoriya Softwares has been a pleasure. The Kuchoriya
+            Softwares team got our work done without any issues or problems.
+            They were very open to accommodating the changes that we made during
+            the project was going on. They carefully reviewed our requirements
+            and delivered on time and within budget! The best part of working
+            with Kuchoriya Softwares was that they remained available throughout
+            the entire project, responding quickly to emails, and ensuring that
+            we were getting the work that we wanted every step of the way. We
+            would hire them again for future projects.
+ 
+Working with Kuchoriya Softwares has been a pleasure. The Kuchoriya
+            Softwares team got our work done without any issues or problems.
+            They were very open to accommodating the changes that we made during
+            the project was going on. They carefully reviewed our requirements
+            and delivered on time and within budget! The best part of working
+            with Kuchoriya Softwares was that they remained available throughout
+            the entire project, responding quickly to emails, and ensuring that
+            we were getting the work that we wanted every step of the way. We
+            would hire them again for future projects.
+ 
+Initially, I was skeptical, given how many scams start with a
+            LinkedIn approach, especially when the solution is overseas and
+            involves "clicking on this link." However, this was different. From
+            the initial consultation to the completion of phase I, Alex and his
+            team were professional, insightful, and enjoyable to work with. They
+            excel at thinking outside the box and providing multiple solutions
+            to the roadblocks we encountered. I highly recommend this team of
+            professionals and look forward to working with them as we add more
+            components to our SaaS and mobile solution.
+ 
+  <div className="flex flex-row gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[40%] shadow-lg shadow-[#e1e1e1] bg-blue-950">
+          {/* Image Section */}
+          <div className="flex flex-row gap-6 items-center">
+            <img
+              src={adella}
+              alt="James Mitchell"
+              className="w-[100px] h-[100px] rounded-full border-4 border-[#f3f3f3] shadow-lg"
+            />
+            <div className="flex flex-col gap-2">
+              <h1 className="font-semibold text-[24px] text-white">Adelle</h1>
+              <p className="font-medium text-[18px] text-yellow-300">
+                Co Founder
+              </p>
+            </div>
+          </div>
+
+          {/* Description Section */}
+          <p className="text-gray-300 text-justify mt-4 leading-relaxed">
+            Working with Kuchoriya Softwares has been a pleasure. The Kuchoriya
+            Softwares team got our work done without any issues or problems.
+            They were very open to accommodating the changes that we made during
+            the project was going on. They carefully reviewed our requirements
+            and delivered on time and within budget! The best part of working
+            with Kuchoriya Softwares was that they remained available throughout
+            the entire project, responding quickly to emails, and ensuring that
+            we were getting the work that we wanted every step of the way. We
+            would hire them again for future projects.
+          </p>
+        </div>
+ 
+Initially, I was skeptical, given how many scams start with a
+            LinkedIn approach, especially when the solution is overseas and
+            involves "clicking on this link." However, this was different. From
+            the initial consultation to the completion of phase I, Alex and his
+            team were professional, insightful, and enjoyable to work with. They
+            excel at thinking outside the box and providing multiple solutions
+            to the roadblocks we encountered. I highly recommend this team of
+            professionals and look forward to working with them as we add more
+            components to our SaaS and mobile solution.
+ 
+Principle Softwere Engineer
+ 
+Initially, I was skeptical, given how many scams start with a
+            LinkedIn approach, especially when the solution is overseas and
+            involves "clicking on this link." However, this was different. From
+            the initial consultation to the completion of phase I, Alex and his
+            team were professional, insightful, and enjoyable to work with. They
+            excel at thinking outside the box and providing multiple solutions
+            to the roadblocks we encountered. I highly recommend this team of
+            professionals and look forward to working with them as we add more
+            components to our SaaS and mobile solution.
+ 
+James Mitchell
+ 
+
+      <div className="flex flex-row gap-2 flex-wrap">
+        <div className="flex flex-row gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[40%] shadow-lg shadow-[#e1e1e1] bg-blue-950">
+          {/* Image Section */}
+          <div className="flex flex-row gap-6 items-center">
+            <img
+              src={simone}
+              alt="James Mitchell"
+              className="w-[100px] h-[100px] rounded-full border-4 border-[#f3f3f3] shadow-lg"
+            />
+            <div className="flex flex-col gap-2">
+              <h1 className="font-semibold text-[24px] text-white">Simone</h1>
+              <p className="font-medium text-[18px] text-yellow-300">
+                Principle Softwere Engineer
+              </p>
+            </div>
+          </div>
+
+          {/* Description Section */}
+          <p className="text-gray-300 text-justify mt-4 leading-relaxed">
+            Working with Kuchoriya Softwares has been a pleasure. The Kuchoriya
+            Softwares team got our work done without any issues or problems.
+            They were very open to accommodating the changes that we made during
+            the project was going on. They carefully reviewed our requirements
+            and delivered on time and within budget! The best part of working
+            with Kuchoriya Softwares was that they remained available throughout
+            the entire project, responding quickly to emails, and ensuring that
+            we were getting the work that we wanted every step of the way. We
+            would hire them again for future projects.
+          </p>
+        </div>
+        <div>1</div>
+      </div>
+ 
+Initially, I was skeptical, given how many scams start with a
+            LinkedIn approach, especially when the solution is overseas and
+            involves "clicking on this link." However, this was different. From
+            the initial consultation to the completion of phase I, Alex and his
+            team were professional, insightful, and enjoyable to work with. They
+            excel at thinking outside the box and providing multiple solutions
+            to the roadblocks we encountered. I highly recommend this team of
+            professionals and look forward to working with them as we add more
+            components to our SaaS and mobile solution.
+ 
+<div>1</div>
+ 
+
+
+        <div>1</div>
+ 
+
+import simone form "../../assests"
+ 
+<div>1</div>
+ 
+
+
+        <div>1</div>
+ 
+
+        <div>1</div>
+ 
+ <div className="flex flex-row gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[50%] shadow-md shadow-[#f3f3f3]">
+          <div className="flex flex-row gap-4 ">
+            <img
+              src={jamesMitchell}
+              alt="jamesMitchell"
+              className="w-[100px] rounded-2xl border-2 border-white"
+            />
+            <div className="flex flex-col flex-wrap gap-2 pt-4">
+              <h1 className="font-[500] text-[20px] text-white">
+                James Mitchell
+              </h1>
+              <p className="font-[500] text-[20px] text-yellow-200">CEO</p>
+            </div>
+          </div>
+          <p className="text-gray-300 text-justify">
+            Initially, I was skeptical, given how many scams start with a
+            LinkedIn approach, especially when the solution is overseas and
+            involves "clicking on this link." However, this was different. From
+            the initial consultation to the completion of phase I, Alex and his
+            team were professional, insightful, and enjoyable to work with. They
+            excel at thinking outside the box and providing multiple solutions
+            to the roadblocks we encountered. I highly recommend this team of
+            professionals and look forward to working with them as we add more
+            components to our SaaS and mobile solution.
+          </p>
+        </div>
+ 
+ <div className="flex flex-row gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[50%] shadow-md shadow-[#f3f3f3]">
+          <div className="flex flex-row gap-4 ">
+            <img
+              src={jamesMitchell}
+              alt="jamesMitchell"
+              className="w-[100px] rounded-2xl border-2 border-white"
+            />
+            <div className="flex flex-col flex-wrap gap-2 pt-4">
+              <h1 className="font-[500] text-[20px] text-white">
+                James Mitchell
+              </h1>
+              <p className="font-[500] text-[20px] text-yellow-200">CEO</p>
+            </div>
+          </div>
+          <p className="text-gray-300 text-justify">
+            Initially, I was skeptical, given how many scams start with a
+            LinkedIn approach, especially when the solution is overseas and
+            involves "clicking on this link." However, this was different. From
+            the initial consultation to the completion of phase I, Alex and his
+            team were professional, insightful, and enjoyable to work with. They
+            excel at thinking outside the box and providing multiple solutions
+            to the roadblocks we encountered. I highly recommend this team of
+            professionals and look forward to working with them as we add more
+            components to our SaaS and mobile solution.
+          </p>
+        </div>
+ 
+<div className="flex flex-row gap-6 flex-wrap border border-white rounded-2xl px-8 py-8 w-[50%]">
+ 
+border border-blue-950
+ 
+
+      <div className="flex flex-wrap flex-row">
+        
+      </div>
+ 
+
+      <div className="flex flexr"></div>
+ 
 bg-gray-600
  
  <div className="flex md:flex-row flex-col flex-wrap w-full md:w-[80%] bg-gray-600 justify-center items-center">
