@@ -1,3 +1,63 @@
+        <div className="flex flex-row justify-between flex-wrap border rounded-md items-center gap-4 p-2 hover:bg-gray-900 hover:text-white cursor-pointer">
+          <img src={foodIcon} alt="foodIcon" />
+          <h2 className="text-[18px] font-[500] text-[#F54D4D] hover:text-white">
+            Food & Restaurants
+          </h2>
+        </div>
+        <div className="flex flex-row justify-between flex-wrap border rounded-md items-center gap-4 p-2 hover:bg-gray-900 hover:text-white cursor-pointer">
+          <img src={gameIcon} alt="foodIcon" />
+          <h2 className="text-[18px] font-[500] text-[#F54D4D] hover:text-white">
+            Game Developments
+          </h2>
+        </div>
+        <div className="flex flex-row justify-between flex-wrap border rounded-md items-center gap-4 p-2 hover:bg-gray-900 hover:text-white cursor-pointer">
+          <img src={sportsIcon} alt="foodIcon" />
+          <h2 className="text-[18px] font-[500] text-[#F54D4D] hover:text-white">
+            Sports Icon
+          </h2>
+        </div>
+        <div className="flex flex-row justify-between flex-wrap border rounded-md items-center gap-4 p-2 hover:bg-gray-900 hover:text-white cursor-pointer">
+          <img src={shoppingIcon} alt="foodIcon" />
+          <h2 className="text-[18px] font-[500] text-[#F54D4D] hover:text-white">
+            Shopping E-commerce
+          </h2>
+        </div>
+ 
+<div className="flex flex-wrap px-32 justify-center items-center gap-4">
+        <div className="flex flex-row justify-between flex-wrap border rounded-md items-center gap-4 p-2 hover:bg-gray-900 hover:text-white cursor-pointer">
+          <img src={foodIcon} alt="foodIcon" />
+          <h2 className="text-[18px] font-[500] text-[#F54D4D] hover:text-white">
+            Food & Restaurants
+          </h2>
+        </div>
+        <div className="flex flex-row justify-between flex-wrap border rounded-md items-center gap-4 p-2 hover:bg-gray-900 hover:text-white cursor-pointer">
+          <img src={gameIcon} alt="foodIcon" />
+          <h2 className="text-[18px] font-[500] text-[#F54D4D] hover:text-white">
+            Game Developments
+          </h2>
+        </div>
+        <div className="flex flex-row justify-between flex-wrap border rounded-md items-center gap-4 p-2 hover:bg-gray-900 hover:text-white cursor-pointer">
+          <img src={sportsIcon} alt="foodIcon" />
+          <h2 className="text-[18px] font-[500] text-[#F54D4D] hover:text-white">
+            Sports Icon
+          </h2>
+        </div>
+        <div className="flex flex-row justify-between flex-wrap border rounded-md items-center gap-4 p-2 hover:bg-gray-900 hover:text-white cursor-pointer">
+          <img src={shoppingIcon} alt="foodIcon" />
+          <h2 className="text-[18px] font-[500] text-[#F54D4D] hover:text-white">
+            Shopping E-commerce
+          </h2>
+        </div>
+      </div>
+ 
+Food & Restaurants
+ 
+
+        <div className="flex flex-row justify-between px-2 flex-wrap border rounded-md items-center">
+          <img src={foodIcon} alt="foodIcon" />
+          <h2>Food & Restaurants</h2>
+        </div>
+ 
 
 
 {/* <p className="text-[12px] text-justify">{item.text}</p> */}

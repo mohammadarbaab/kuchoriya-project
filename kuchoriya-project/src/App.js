@@ -6,6 +6,7 @@ import Services from "./Components/Services/Services";
 import CaseStudy from "./Components/CaseStudy/CaseStudy";
 import Owner from "./Components/Owner/Owner";
 import OurServices from "./Components/OurServices/OurServices";
+import DiffIndustry from "./Components/DiffIndustry/DiffIndustry";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <CaseStudy></CaseStudy>
       <Owner></Owner>
       <OurServices></OurServices>
+      <DiffIndustry></DiffIndustry>
     </div>
   );
 }
