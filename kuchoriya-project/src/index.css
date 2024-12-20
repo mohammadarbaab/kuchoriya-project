@@ -27,3 +27,25 @@ body {
   }
 }
 
+@keyframes slide-continuous {
+  0% {
+    transform: translateX(100%); /* Start from right */
+  }
+  50% {
+    transform: translateX(0); /* Reach the original position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move out to the left */
+  }
+}
+
+/* .animate-slide-continuous {
+  animation: slide-continuous 4s ease-in-out infinite;
+  animation-play-state: running; 
+} */
+
+/* Pause the animation when hovering */
+/* .animate-slide-continuous:hover {
+  animation-play-state: paused;
+} */
+

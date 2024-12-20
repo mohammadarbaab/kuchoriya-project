@@ -1,3 +1,573 @@
+
+
+{/* <p className="text-[12px] text-justify">{item.text}</p> */}
+ 
+<div className="flex flex-wrap md:justify-start px-32  gap-3 animate-slide-continuous cursor-pointer w-full ">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col w-[250px] h-[250px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative px-3 py-4 border border-blue-950 ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+            style={{
+              backgroundImage: `url(${item.image})`, // Set the background image from the items array
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center", // Centers the background image
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-white bg-opacity-80 z-1 rounded-xl"></div>
+
+            {/* Text Content */}
+            <div className="relative z-10 flex flex-col gap-4">
+              <p className="font-[700] text-[20px] leading-[20px] text-center text-orange-500">{item.name}</p>
+              <p className="text-[16px] justify-start font-[500]">{item.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+ 
+justify-start items-start
+ 
+items-start justify-start
+ 
+px-32
+ 
+/* Default state is running */
+ 
+ <div className="flex flex-row flex-wrap gap-2 py-6 px-2 justify-center items-center w-full bg-white">
+      <div className="flex flex-wrap md:justify-start px-32 items-center justify-center gap-3 animate-slide-continuous cursor-pointer">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col w-[250px] h-[250px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative px-3 py-4 border border-blue-950 ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+            style={{
+              backgroundImage: `url(${item.image})`, // Set the background image from the items array
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center", // Centers the background image
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-white bg-opacity-80 z-1 rounded-xl"></div>
+
+            {/* Text Content */}
+            <div className="relative z-10 flex flex-col gap-2">
+              <p className="font-[700] text-[16px] text-center">{item.name}</p>
+              <p className="text-[16px] text-justify">{item.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+ 
+ {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col w-[155px] h-[230px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative px-3 py-4 ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+            style={{
+              backgroundImage: `url(${item.image})`, // Set the background image from the items array
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center", // Centers the background image
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-white bg-opacity-80 z-1 rounded-xl"></div>
+
+            {/* Text Content */}
+            <div className="relative z-10 flex flex-col gap-2">
+              <p className="font-[700] text-[12px] text-center t">{item.name}</p>
+              <p className="text-[12px] text-justify">{item.text}</p>
+            </div>
+          </div>
+        ))}
+ 
+ {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col w-[155px] h-[230px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative px-3 py-4 ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+            style={{
+              backgroundImage: `url(${item.image})`, // Set the background image from the items array
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center", // Centers the background image
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-white bg-opacity-80 z-1 rounded-xl"></div>
+
+            {/* Text Content */}
+            <div className="relative z-10 flex flex-col gap-2">
+              <p className="font-[700] text-[12px] text-center t">{item.name}</p>
+              <p className="text-[12px] text-justify">{item.text}</p>
+            </div>
+          </div>
+        ))}
+ 
+ {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col w-[155px] h-[230px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative px-3 py-4 ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+            style={{
+              backgroundImage: `url(${item.image})`, // Set the background image from the items array
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center", // Centers the background image
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-white bg-opacity-80 z-1 rounded-xl"></div>
+
+            {/* Text Content */}
+            <div className="relative z-10 flex flex-col gap-2">
+              <p className="font-[700] text-[12px] text-center t">{item.name}</p>
+              <p className="text-[12px] text-justify">{item.text}</p>
+            </div>
+          </div>
+        ))}
+ 
+text-center
+ 
+ items-center justify-cente
+ 
+We bring your ideas to life with our high-quality web and mobile app development services.
+ 
+@keyframes slide-continuous {
+  0% {
+    transform: translateX(100%); /* Start from right */
+  }
+  50% {
+    transform: translateX(0); /* Reach the original position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move out to the left */
+  }
+}
+
+.animate-slide-continuous {
+  animation: slide-continuous 8s ease-in-out infinite;
+}
+
+ 
+  <div className="flex flex-row flex-wrap gap-2 py-6 px-2 justify-center items-center w-full bg-red-400">
+      <div className="flex flex-wrap md:justify-start items-center justify-center gap-3">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col items-center justify-center w-[137px] h-[180px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+            style={{
+              backgroundImage: `url(${item.image})`, // Set the background image from the items array
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center", // Centers the background image
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-white bg-opacity-80 z-1 rounded-xl"></div>
+
+            {/* Text Content */}
+            <div className="relative z-10 text-center">
+              <p className="font-[500] text-[18px]">{item.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+ 
+  <div className="flex flex-row flex-wrap gap-2 py-6 px-2 justify-center items-center w-full bg-red-400">
+      <div className="flex flex-wrap md:justify-start items-center justify-center gap-3">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col items-center justify-center w-[137px] h-[180px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+            style={{
+              backgroundImage: `url(${item.image})`, // Set the background image from the items array
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center", // Centers the background image
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-white bg-opacity-80 z-1 rounded-xl"></div>
+
+            {/* Text Content */}
+            <div className="relative z-10 text-center">
+              <p className="font-[500] text-[18px]">{item.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+ 
+<div className="flex flex-wrap md:justify-start items-center justify-center gap-3">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col items-center justify-center w-[137px] h-[180px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+            style={{
+              backgroundImage: `url(${item.image})`, // Set the background image from the items array
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center", // Centers the background image
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-white bg-opacity-80 z-1 rounded-xl"></div>
+
+            {/* Text Content */}
+            <div className="relative z-10 text-center">
+              <p className="font-[500] text-[18px]">{item.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+ 
+<div className="flex flex-wrap md:justify-start items-center justify-center gap-5">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+            style={{
+              backgroundImage: `url(${item.image})`, // Set the background image from the items array
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center", // Centers the background image
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-white bg-opacity-80 z-1 rounded-xl"></div>
+
+            {/* Text Content */}
+            <div className="relative z-10 text-center">
+              <p className="font-[500] text-[18px]">{item.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+ 
+ <img
+              src={item.image}
+              alt={item.name}
+              className="w-16 h-16 object-contain" // Adjust size and styling as needed
+            />
+ 
+ <div
+  key={index}
+  className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative ${
+    hoveredIndex === index
+      ? "bg-white text-blue-950"
+      : "bg-[#E8FBFF] bg-opacity-60 text-black"
+  }`}
+  onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+  onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+  style={{
+    backgroundImage: `url(${item.image})`, // Set the background image from the items array
+    backgroundSize: "cover", // Ensures the image covers the container
+    backgroundPosition: "center", // Centers the background image
+  }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-white bg-opacity-80 z-1 rounded-xl"></div>
+
+  {/* Text Content */}
+  <div className="relative z-10 text-center">
+    <img
+      src={item.image}
+      alt={item.name}
+      className="w-16 h-16 object-contain" // Adjust size and styling as needed
+    />
+    <p className="font-[500] text-[18px]">{item.name}</p>
+  </div>
+</div>
+ 
+ <div className="flex flex-wrap md:justify-start items-center justify-center gap-5">
+  {items.map((item, index) => (
+    <div
+      key={index}
+      className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative ${
+        hoveredIndex === index
+          ? "bg-white text-blue-950"
+          : "bg-[#E8FBFF] bg-opacity-60 text-black"
+      }`}
+      onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+      onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+      style={{
+        backgroundImage: `url(${item.image})`, // Set the background image from the items array
+        backgroundSize: "cover", // Ensures the image covers the container
+        backgroundPosition: "center", // Centers the background image
+      }}
+    >
+      {/* Overlay to darken the image */}
+      <div className="absolute inset-0 bg-black bg-opacity-40 rounded-xl"></div>
+
+      <div className="relative z-10 text-center">
+        <p className="font-[500] text-[18px]">{item.name}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+ 
+ <div className="flex flex-wrap md:justify-start items-center justify-center gap-5">
+  {items.map((item, index) => (
+    <div
+      key={index}
+      className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative ${
+        hoveredIndex === index
+          ? "bg-white text-blue-950"
+          : "bg-[#E8FBFF] bg-opacity-60 text-black"
+      }`}
+      onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+      onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+      style={{
+        backgroundImage: `url(${item.image})`, // Set the background image from the items array
+        backgroundSize: "cover", // Ensures the image covers the container
+        backgroundPosition: "center", // Centers the background image
+      }}
+    >
+      {/* Overlay to darken the image */}
+      <div className="absolute inset-0 bg-black bg-opacity-40 rounded-xl"></div>
+
+      <div className="relative z-10 text-center">
+        <p className="font-[500] text-[18px]">{item.name}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
+ 
+<div
+            key={index}
+            className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out relative ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+            style={{
+              backgroundImage: `url(${item.image})`, // Set the background image from the items array
+              backgroundSize: "cover", // Ensures the image covers the container
+              backgroundPosition: "center", // Centers the background image
+            }}
+          >
+ 
+  <img
+          src={item.image}
+          alt={item.name}
+          className="w-16 h-16 object-contain" // Adjust size and styling as needed
+        />
+ 
+ <div className="flex flex-wrap md:justify-start items-center justify-center gap-5 ">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-16 h-16 object-contain" // Adjust size and styling as needed
+            />
+            <p className="font-[500] text-[18px]">{item.name}</p>
+          </div>
+        ))}
+      </div>
+ 
+<div className="flex flex-wrap md:justify-start items-center justify-center gap-5 ">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-wrap flex-col items-center justify-center w-[160px] h-[190px] gap-5 rounded-xl transition-all duration-300 ease-in-out ${
+              hoveredIndex === index
+                ? "bg-white text-blue-950"
+                : "bg-[#E8FBFF] bg-opacity-60 text-black"
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)} // Set the hovered item
+            onMouseLeave={() => setHoveredIndex(null)} // Reset when mouse leaves
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-16 h-16 object-contain" // Adjust size and styling as needed
+            />
+            <p className="font-[500] text-[18px]">{item.name}</p>
+          </div>
+        ))}
+      </div>
+ 
+
+import ios_icon from "../../assests/IOS-icon.png";
+import frontend from "../../assests/react_js_icon.png";
+import backend from "../../assests/nodejs_icon.png";
+import cms from "../../assests/shopify_icon.png";
+import infra from "../../assests/google_cloud_icon.png";
+import aws from "../../assests/aws_cloud_icon.png";
+ 
+
+import hero_image from "../../assests/hero-image.jpg";
+ 
+
+import database from "../../assests/MySQL_icon.png";
+ 
+<div
+        className="relative bg-cover bg-center h-[200px] w-[300px] rounded-2xl"
+        style={{
+          backgroundImage: `url(${ourserviceBg})`,
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-80 z-10 rounded-2xl"></div>
+
+        {/* Text Content */}
+        <div className="relative z-20 p-4">
+          <p className="font-[500] text-1xl text-center text-white">
+            What we do best
+          </p>
+          <p className="font-[700] text-[30px] text-center text-yellow-300">
+            Our Services
+          </p>
+          <p className="text-justify font-normal text-[14px] text-white">
+            We bring your ideas to life with our high-quality web and mobile app
+            development services.
+          </p>
+        </div>
+      </div>
+      <div
+        className="relative bg-cover bg-center h-[200px] w-[300px] rounded-2xl"
+        style={{
+          backgroundImage: `url(${webDevBg})`,
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-80 z-10 rounded-2xl"></div>
+
+        {/* Text Content */}
+        <div className="relative z-20 p-4">
+          <p className="font-[500] text-1xl text-center text-white">
+            web
+          </p>
+          <p className="font-[700] text-[30px] text-center text-yellow-300">
+            Our Services
+          </p>
+          <p className="text-justify font-normal text-[14px] text-white">
+            We bring your ideas to life with our high-quality web and mobile app
+            development services.
+          </p>
+        </div>
+      </div>
+ 
+ <div className="flex flex-col w-[300px] h-[200px] flex-wrap gap-2 justify-center items-center px-4 border-2 border-blue-950 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+        <p className="font-[500] text-2xl text-center">What we do best</p>
+        <p className="font-[700] text-[20px] text-center text-blue-950">
+          Our Services
+        </p>
+        <p className="text-justify font-normal text-lg text-gray-700">
+          We bring your ideas to life with our high-quality web and mobile app
+          development services.
+        </p>
+      </div>
+ 
+
+
+      <div className="flex flex-col w-auto h-auto flex-wrap gap-2 justify-center items-center px-4 border-2 border-blue-950 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+        <p className="font-semibold text-2xl text-center">What we do best</p>
+        <p className="font-semibold text-2xl text-center">Our Services</p>
+        <p className="text-justify font-normal text-lg text-gray-700">
+          We bring your ideas to life with our high-quality web and mobile app
+          development services.
+        </p>
+      </div>
+ 
+<div className="w-[300px] h-[300px] bg-gray-600">1</div>
+      <div className="w-[300px] h-[300px] bg-gray-600">1</div>
+ 
+<div className="flex flex-col w-[300px] h-[300px] flex-wrap gap-2 justify-center items-center px-4 border border-black rounded-xl">
+        <p className="font-[600] text-[28px]">What we do best</p>
+        <p className="font-[600] text-[28px]">Our Services</p>
+        <p className="text-justify font-[400] text-[]">
+          We bring your ideas to life with our high-quality web and mobile app
+          development services.
+        </p>
+      </div>
+ 
+ <div className="flex flex-col w-[300px] h-[300px] flex-wrap gap-2 justify-center items-center px-4 border border-black rounded-xl">
+        <p className="font-[600] text-[28px]">What we do best</p>
+        <p className="font-[600] text-[28px] ">Our Services</p>
+        <p className="text-justify font-[400] text-[18px]">
+          We bring your ideas to life with our high-quality web and mobile app
+          development services.
+        </p>
+      </div>
+ 
+
+        <h1>Our Services</h1>
+ 
+bg-orange-300
+ 
+
+      </div>
+ 
+
+      <div className="w-[300px] h-[300px] bg-gray-600 rounded-2xl justify-center items-center">
+ 
+ justify-center items-center
+ 
+
+      <div className="w-[30%] h-[30%] bg-gray-600">1</div>
+      <div className="w-[30%] h-[30%] bg-gray-600">1</div>
+ 
   <div className="flex flex-wrap justify-center items-center flex-row gap-6">
           <img src={clutchIcon} alt="clutchIcon" className="w-[100px]" />
           <img src={goodfilms} alt="goodfilms" className="w-[100px]" />

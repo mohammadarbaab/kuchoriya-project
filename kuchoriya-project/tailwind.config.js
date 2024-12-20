@@ -21,6 +21,7 @@ module.exports = {
             transform: 'translateX(0)', // End at normal position
           },
         },
+          
       },
     },
   },
