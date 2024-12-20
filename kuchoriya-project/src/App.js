@@ -7,6 +7,7 @@ import CaseStudy from "./Components/CaseStudy/CaseStudy";
 import Owner from "./Components/Owner/Owner";
 import OurServices from "./Components/OurServices/OurServices";
 import DiffIndustry from "./Components/DiffIndustry/DiffIndustry";
+import Blog from "./Components/Blog/Blog";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Owner></Owner>
       <OurServices></OurServices>
       <DiffIndustry></DiffIndustry>
+      <Blog></Blog>
     </div>
   );
 }

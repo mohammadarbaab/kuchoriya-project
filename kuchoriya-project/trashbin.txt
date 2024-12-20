@@ -1,3 +1,261 @@
+      {blogData.map((blog) => (
+        <div
+          key={blog.id}
+          className="flex flex-col flex-wrap rounded-2xl shadow-2xl hover:shadow-xl transition-shadow duration-300 md:w-[300px] max-w-[300px] pb-6"
+        >
+          <img
+            src={blog.image}
+            alt={`Blog ${blog.id}`}
+            className="w-[300px] rounded-tl-2xl rounded-tr-2xl"
+          />
+          <div className="flex flex-col gap-2 p-4">
+            <h2 className="text-[18px] font-[500] text-black">{blog.title}</h2>
+            <p className="text-justify font-[400] text-gray-700">
+              {blog.description}{" "}
+              <span className="text-blue-800 cursor-pointer">{blog.linkText}</span>
+            </p>
+          </div>
+        </div>
+      ))}
+ 
+      {blogData.map((blog) => (
+        <div
+          key={blog.id}
+          className="flex flex-col flex-wrap rounded-2xl shadow-2xl hover:shadow-xl transition-shadow duration-300 md:w-[300px] max-w-[300px] pb-6"
+        >
+          <img
+            src={blog.image}
+            alt={`Blog ${blog.id}`}
+            className="w-[300px] rounded-tl-2xl rounded-tr-2xl"
+          />
+          <div className="flex flex-col gap-2 p-4">
+            <h2 className="text-[18px] font-[500] text-black">{blog.title}</h2>
+            <p className="text-justify font-[400] text-gray-700">
+              {blog.description}{" "}
+              <span className="text-blue-800 cursor-pointer">{blog.linkText}</span>
+            </p>
+          </div>
+        </div>
+      ))}
+ 
+<div className="flex flex-col flex-wrap rounded-2xl shadow-2xl hover:shadow-xl transition-shadow duration-300 md:w-[300px] max-w-[300px] pb-6">
+          <img
+            src={blog_1}
+            alt="Blog1"
+            className="w-[300px] rounded-tl-2xl rounded-tr-2xl"
+          />
+          <div className="flex flex-col gap-2 p-4">
+            <h2 className="text-[18px] font-[500] text-black">
+              New Year, New Solutions: Exclusive Offers on Web & App Development
+            </h2>
+            <p className="text-justify font-[400] text-gray-700">
+              As 2025 rolls in, businesses across the globe are gearing up for a
+              new year of growth, tra.....{" "}
+              <span className="text-blue-800 cursor-pointer">Read more...</span>
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col flex-wrap rounded-2xl shadow-2xl hover:shadow-xl transition-shadow duration-300 md:w-[300px] max-w-[300px] pb-6">
+          <img
+            src={blog_2}
+            alt="Blog1"
+            className="w-[300px] rounded-tl-2xl rounded-tr-2xl"
+          />
+          <div className="flex flex-col gap-2 p-4">
+            <h2 className="text-[18px] font-[500] text-black">
+              Celebrate Christmas with Up to 30% Off on Digital Solutions
+            </h2>
+            <p className="text-justify font-[400] text-gray-700">
+              The holiday season is here, bringing joy, celebration, and the
+              perfect opportunity to grow.....{" "}
+              <span className="text-blue-800 cursor-pointer">Read more...</span>
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col flex-wrap rounded-2xl shadow-2xl hover:shadow-xl transition-shadow duration-300 md:w-[300px] max-w-[300px] pb-6">
+          <img
+            src={blog_3}
+            alt="Blog1"
+            className="w-[300px] rounded-tl-2xl rounded-tr-2xl"
+          />
+          <div className="flex flex-col gap-2 p-4">
+            <h2 className="text-[18px] font-[500] text-black">
+              Top 10 Pimcore Development Companies Driving Digital Innovation
+            </h2>
+            <p className="text-justify font-[400] text-gray-700">
+              Pimcore is an advanced open-source digital experience platform
+              (DXP) designed to help busi.....{" "}
+              <span className="text-blue-800 cursor-pointer">Read more...</span>
+            </p>
+          </div>
+        </div>
+ 
+As 2025 rolls in, businesses across the globe are gearing up for a
+              new year of growth, tra.....
+ 
+New Year, New Solutions: Exclusive Offers on Web & App Development
+ 
+As 2025 rolls in, businesses across the globe are gearing up for a
+              new year of growth, tra.....
+ 
+New Year, New Solutions: Exclusive Offers on Web & App Development
+ 
+
+        <div className="flex flex-col flex-wrap rounded-2xl shadow-2xl hover:shadow-xl transition-shadow duration-300 md:w-[300px] pb-6">
+          <img
+            src={blog_1}
+            alt="Blog1"
+            className="w-[300px] rounded-tl-2xl rounded-tr-2xl"
+          />
+          <div className="flex flex-col gap-2 p-4">
+            <h2 className="text-[18px] font-[500] text-black">
+              New Year, New Solutions: Exclusive Offers on Web & App Development
+            </h2>
+            <p className="text-justify font-[400] text-gray-700">
+              As 2025 rolls in, businesses across the globe are gearing up for a
+              new year of growth, tra.....{" "}
+              <span className="text-blue-800 cursor-pointer">Read more...</span>
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col flex-wrap rounded-2xl shadow-2xl hover:shadow-xl transition-shadow duration-300 md:w-[300px] pb-6">
+          <img
+            src={blog_1}
+            alt="Blog1"
+            className="w-[300px] rounded-tl-2xl rounded-tr-2xl"
+          />
+          <div className="flex flex-col gap-2 p-4">
+            <h2 className="text-[18px] font-[500] text-black">
+              New Year, New Solutions: Exclusive Offers on Web & App Development
+            </h2>
+            <p className="text-justify font-[400] text-gray-700">
+              As 2025 rolls in, businesses across the globe are gearing up for a
+              new year of growth, tra.....{" "}
+              <span className="text-blue-800 cursor-pointer">Read more...</span>
+            </p>
+          </div>
+        </div>
+ 
+ border border-white
+ 
+<div className="flex flex-col flex-wrap rounded-2xl border border-blue-950 w-[300px]">
+          <img src={blog_1} alt="Blog1" className="w-[300px] rounded-2xl " />
+          <div className=" flex flex-col gap-2 flex-wrap p-4">
+            <h2 className="text-[18px] font-[500]">
+              New Year, New Solutions: Exclusive Offers on Web & App Development
+            </h2>
+            <p className="flex flex-wrap text-justify font-[400]">
+              As 2025 rolls in, businesses across the globe are gearing up for a
+              new year of growth, tra..... Read more...
+            </p>
+          </div>
+        </div>
+ 
+
+        <div className="flex flex-row flex-wrap rounded-2xl border border-blue-950 bg-orange-600">
+          <img src={blog_1} alt="Blog1" className="w-[300px] rounded-2xl " />
+          <div className=" flex flex-col gap-2 flex-wrap">
+            <h2>
+              New Year, New Solutions: Exclusive Offers on Web & App Development
+            </h2>
+            <p>
+              As 2025 rolls in, businesses across the globe are gearing up for a
+              new year of growth, tra..... Read more...
+            </p>
+          </div>
+        </div>
+ 
+
+      <div className="flex flex-row flex-wrap rounded-2xl border border-blue-950 bg-orange-600">
+        <img src={blog_1} alt="Blog1" className="w-[300px] rounded-2xl " />
+        <div className=" flex flex-col gap-2 flex-wrap">
+          <h2>
+            New Year, New Solutions: Exclusive Offers on Web & App Development
+          </h2>
+          <p>
+            As 2025 rolls in, businesses across the globe are gearing up for a
+            new year of growth, tra..... Read more...
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-row flex-wrap rounded-2xl border border-blue-950 bg-orange-600">
+        <img src={blog_1} alt="Blog1" className="w-[300px] rounded-2xl " />
+        <div className=" flex flex-col gap-2 flex-wrap">
+          <h2>
+            New Year, New Solutions: Exclusive Offers on Web & App Development
+          </h2>
+          <p>
+            As 2025 rolls in, businesses across the globe are gearing up for a
+            new year of growth, tra..... Read more...
+          </p>
+        </div>
+      </div>
+ 
+ <div className="flex flex-wrap gap-2 justify-center items-center px-32 py-12 mt-8 bg-red-500">
+      <div className="flex flex-row flex-wrap rounded-2xl border border-blue-950 bg-orange-600">
+        <img src={blog_1} alt="Blog1" className="w-[300px] rounded-2xl " />
+        <div className=" flex flex-col gap-2 flex-wrap">
+          <h2>
+            New Year, New Solutions: Exclusive Offers on Web & App Development
+          </h2>
+          <p>
+            As 2025 rolls in, businesses across the globe are gearing up for a
+            new year of growth, tra..... Read more...
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-row flex-wrap rounded-2xl border border-blue-950 bg-orange-600">
+        <img src={blog_1} alt="Blog1" className="w-[300px] rounded-2xl " />
+        <div className=" flex flex-col gap-2 flex-wrap">
+          <h2>
+            New Year, New Solutions: Exclusive Offers on Web & App Development
+          </h2>
+          <p>
+            As 2025 rolls in, businesses across the globe are gearing up for a
+            new year of growth, tra..... Read more...
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-row flex-wrap rounded-2xl border border-blue-950 bg-orange-600">
+        <img src={blog_1} alt="Blog1" className="w-[300px] rounded-2xl " />
+        <div className=" flex flex-col gap-2 flex-wrap">
+          <h2>
+            New Year, New Solutions: Exclusive Offers on Web & App Development
+          </h2>
+          <p>
+            As 2025 rolls in, businesses across the globe are gearing up for a
+            new year of growth, tra..... Read more...
+          </p>
+        </div>
+      </div>
+    </div>
+ 
+ <a
+        href="#"
+        className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+      >
+        <img
+          className="object-cover w-[400px] h-96  md:rounded-none"
+          src={blog_1}
+          alt=""
+        />
+        <div className="flex flex-col justify-between p-4 leading-normal">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Noteworthy technology acquisitions 2021
+          </h5>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.
+          </p>
+        </div>
+      </a>
+ 
+ md:rounded-s-lg
+ 
+rounded-t-lg
+ 
+/docs/images/blog/image-4.jpg"
+ 
         <div className="flex flex-row justify-between flex-wrap border rounded-md items-center gap-4 p-2 hover:bg-gray-900 hover:text-white cursor-pointer">
           <img src={foodIcon} alt="foodIcon" />
           <h2 className="text-[18px] font-[500] text-[#F54D4D] hover:text-white">
