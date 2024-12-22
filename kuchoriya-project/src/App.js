@@ -9,8 +9,10 @@ import React from "react";
 // import DiffIndustry from "./Components/DiffIndustry/DiffIndustry";
 // import Blog from "./Components/Blog/Blog";
 // import AcrossPartnership from "./Components/AcrossPart/AcrossPartnership";
-// import Achivements from "./Achivements/Achivements";
-import ContactUs from "./Components/ContactUs/ContactUs";
+// import Achivements from "./Components/Achivements/Achivements";
+// import ContactUs from "./Components/ContactUs/ContactUs";
+// import Location from "./Components/Location/Location";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -25,8 +27,10 @@ function App() {
       <DiffIndustry></DiffIndustry>
       <Blog></Blog>
       <AcrossPartnership></AcrossPartnership>
-      <Achivements></Achivements> */}
+      <Achivements></Achivements>
       <ContactUs></ContactUs>
+      <Location></Location> */}
+      <Footer></Footer>
     </div>
   );
 }

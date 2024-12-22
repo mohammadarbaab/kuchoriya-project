@@ -1,10 +1,10 @@
 import React from "react";
-import growthIcon from "../assests/growthIcon.png";
-import telentedIcon from "../assests/telentIcon.png";
-import appIcon from "../assests/appsIcon.png";
-import projectsIcon from "../assests/projectIcon.png";
-import countryIcon from "../assests/CountriesIcon.png";
-import client from "../assests/clientIcon.png";
+import growthIcon from "../../assests/growthIcon.png";
+import telentedIcon from "../../assests/telentIcon.png";
+import appIcon from "../../assests/projectIcon.png";
+import projectsIcon from "../../assests/projectIcon.png";
+import countryIcon from "../../assests/CountriesIcon.png";
+import client from "../../assests/clientIcon.png";
 
 function Achivements() {
   const achievementsData = [

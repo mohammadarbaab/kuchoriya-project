@@ -1,3 +1,250 @@
+6
+ 
+border
+ 
+ <div className="relative">
+            <input
+              placeholder="Enter your email"
+              className="border p-2 rounded-md pl-10 pr-12 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <img
+              src={arrow}
+              alt="arrow"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 w-[20px] cursor-pointer"
+            />
+          </div>
+ 
+ <input
+            placeholder="Enter your email"
+            className="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-blue-400 transition-all"
+            <img src={arrow} alt="" className="w-[100px]"/>
+          />
+ 
+<input placeholder="enter your email" className="border p-2" />
+ 
+
+      <div className="flex flex-col justify-center items-center gap-2">
+        <div className="flex flex-row gap-2 flex-wrap">
+          <img src={star} alt="stars" className="w-[20px]" />
+          <img src={star} alt="stars" className="w-[20px]" />
+          <img src={star} alt="stars" className="w-[20px]" />
+          <img src={star} alt="stars" className="w-[20px]" />
+          <img src={star} alt="stars" className="w-[20px]" />
+        </div>
+        <p className="font-[500] text-[14px] text-white">
+          Rated 5/5 based on 300+ clients
+        </p>
+      </div>
+ 
+yellow-600
+ 
+-yellow-600
+ 
+yellow-600
+ 
+white
+ 
+Dating Applications
+ 
+Healthcare Solutions
+ 
+Insurance Solutions
+ 
+Fleet Management
+ 
+E-learning Solutions
+ 
+E-commerce Solutions
+ 
+Solutions
+ 
+
+            <li>CTO Services</li>
+            <li>Referral Partner Program</li>
+ 
+Blockchain Development
+ 
+Game Development
+ 
+Web Developmen
+ 
+Mobile App Development
+ 
+        <div className="flex flex-col flex-wrap justify-start items-start">
+          <ul>
+            <li>Our Services</li>
+            <li>Mobile App Develpment</li>
+            <li>Web Development</li>
+            <li>Game Develpment</li>
+            <li>Blockchain Development</li>
+            <li>OutStaffing</li>
+            <li>UI/UX Design Research</li>
+            <li>Quality Analysis</li>
+            <li>CTO Services</li>
+            <li>Referral Partner Program</li>
+          </ul>
+        </div>
+ 
+ flex-row
+ 
+bg-red-500
+ 
+lg:px-5
+ 
+ justify-between
+ 
+71, Formia, Italy,
+ 
+Viale dell'Esperanto,
+ 
+Italy
+ 
+
+          "Dubai United Arab",
+          "Emirates Dubai 91929"
+ 
+opposite Damas jewellery,
+ 
+AI Sarayat St,
+ 
+118, JLT Cluster V,
+ 
++27824507091
+ 
+South Africa,
+ 
+Sunnydale Fish Hoek 7985 Western Cape, 
+ 
+12 IbisWay
+ 
+South Africa
+ 
++13575-331
+ 
+Boa Vista, Brazil,
+ 
+1266, San Carlos, São Paulo,
+ 
+Bispo César da Corso Filho,
+ 
+Brazil
+ 
+
+          "+1 (650) 488-7911",
+ 
+ON L5G 4N3 Canada ,
+ 
+Suite PH11, Mississauga,
+ 
+1100 Caven St.,
+ 
+Canada
+ 
+ {locations.map((location, index) => (
+        <div
+          key={index}
+          className="flex flex-col bg-white border gap-1 rounded-[20px] p-6 border-blue-950 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out items-center"
+        >
+          <img
+            src={location.image}
+            alt="location"
+            className="w-[60px] mb-2 transition-transform transform hover:scale-105"
+          />
+          <h2 className="font-[500] text-[24px] text-blue-950 hover:text-blue-700 transition-colors duration-200 ease-in-out">
+            {location.country}
+          </h2>
+          {location.address.map((line, idx) => (
+            <p
+              key={idx}
+              className="text-[14px] text-gray-700 hover:text-gray-900 transition-colors duration-200 ease-in-out"
+            >
+              {line}
+            </p>
+          ))}
+        </div>
+      ))}
+ 
+   <div className="flex flex-col bg-white border gap-1 rounded-[20px] p-6 border-blue-950 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out justify-center items-center">
+        <img
+          src={location}
+          alt="location"
+          className="w-[60px] mb-2 transition-transform transform hover:scale-105"
+        />
+        <h2 className="font-[500] text-[24px] text-blue-950 hover:text-blue-700 transition-colors duration-200 ease-in-out">
+          United States
+        </h2>
+        <p className="text-[14px] text-gray-700 hover:text-gray-900 transition-colors duration-200 ease-in-out">
+          9765 Keystone Court,
+        </p>
+        <p className="text-[14px] text-gray-700 hover:text-gray-900 transition-colors duration-200 ease-in-out">
+          Clarence, NY 14031,
+        </p>
+        <p className="text-[14px] text-gray-700 hover:text-gray-900 transition-colors duration-200 ease-in-out">
+          USA, +1 (650) 488-7911
+        </p>
+      </div>
+      <div className="flex flex-col bg-white border gap-1 rounded-[20px] p-6 border-blue-950 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out items-center">
+        <img
+          src={location}
+          alt="location"
+          className="w-[60px] mb-2 transition-transform transform hover:scale-105"
+        />
+        <h2 className="font-[500] text-[24px] text-blue-950 hover:text-blue-700 transition-colors duration-200 ease-in-out">
+          Canada
+        </h2>
+        <p className="text-[14px] text-gray-700 hover:text-gray-900 transition-colors duration-200 ease-in-out">
+          1100 Caven St.,
+        </p>
+        <p className="text-[14px] text-gray-700 hover:text-gray-900 transition-colors duration-200 ease-in-out">
+          Suite PH11, Mississauga,
+        </p>
+        <p className="text-[14px] text-gray-700 hover:text-gray-900 transition-colors duration-200 ease-in-out">
+          ON L5G 4N3 Canada ,
+        </p>
+        <p className="text-[14px] text-gray-700 hover:text-gray-900 transition-colors duration-200 ease-in-out">
+          +1 (416) 726-4662,
+        </p>
+        <p className="text-[14px] text-gray-700 hover:text-gray-900 transition-colors duration-200 ease-in-out">
+          +1 (650) 488-7911
+        </p>
+      </div>
+ 
++1 (416) 726-4662,
+ 
+ON L5G 4N3 Canada ,
+ 
+SA, +1 (650) 488-7911
+ 
+Clarence, NY 14031,
+ 
+9765 Keystone Court,
+ 
+ justify-center
+ 
+justify-center
+ 
+   <div className="flex flex-col bg-white border gap-1 rounded-[20px] p-4 border-blue-950  justify-center items-center">
+        <img src={location} alt="location" className="w-[50px]" />
+        <h2 className="font-[500] text-[24px]">United State</h2>
+        <p className="text-[14px]">9765 keystone court,</p>
+        <p className="text-[14px]">Clarence, NY 14031 ,</p>
+        <p className="text-[14px]">USA, +1 (650) 488-7911</p>
+      </div>
+ 
+USA, +1 (650) 488-
+ 
+../assests/telentIcon.png
+ 
+../assests/appsIcon.png
+ 
+../assests/projectIcon.png
+ 
+../assests/CountriesIcon.png
+ 
+../assests/clientIcon.png
+ 
+./Achivements/Achivements
+ 
 bg-red-300
  
 bg-orange-400
