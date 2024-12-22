@@ -49,3 +49,17 @@ body {
   animation-play-state: paused;
 } */
 
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* moves up by 8px */
+  }
+}
+
+.animate-floating {
+  animation: floating 2s ease-in-out infinite;
+}
+
