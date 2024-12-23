@@ -5,7 +5,7 @@ import role_model from "../../assests/role-model.png";
 
 function Partnrship() {
   return (
-    <div className="flex flex-wrap flex-col justify-center items-center w-full h-auto py-6 gap-10">
+    <div className="flex flex-wrap flex-col justify-center items-center w-full h-auto gap-10">
       <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 gap-6 leading-[25px] py-8 px-8">
         <h1 className="text-[36px] font-[700] text-center leading-[40px]">
           Partnership Models

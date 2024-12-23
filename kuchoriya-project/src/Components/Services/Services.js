@@ -15,7 +15,7 @@ function Services() {
     setOpenIndex(openIndex === index ? null : index); // Close if the same is clicked, else open
   };
   return (
-    <div className="flex flex-wrap flex-col justify-center items-center w-full h-auto py-6 gap-10">
+    <div className="flex flex-wrap flex-col justify-center items-center w-full h-auto gap-10">
       <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-blue-950">
         <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-white">
           Technologies <span className="text-[#F54D4D]">We work with</span>

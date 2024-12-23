@@ -32,12 +32,12 @@ function CaseStudy() {
     return () => clearInterval(interval); // Clear interval on component unmount
   }, []);
   return (
-    <div className="flex flex-col gap-2 flex-wrap justify-start items-center pb-6">
-      <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 gap-4 leading-[25px] py-8 px-8 bg-white">
-        <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-blue-950">
+    <div className="flex flex-col gap-8 flex-wrap justify-start items-center">
+      <div className="flex flex-col flex-wrap w-auto h-auto md:px-36 md:gap-6 bg-blue-950 gap-4 leading-[25px] py-8 px-8 ">
+        <h1 className="md:text-[36px] md:font-[700] text-center md:leading-[40px] text-[30px] font-[700] leading-[40px] text-white">
           Case Study
         </h1>
-        <p className="text-[18px] font-[500] text-black text-justify">
+        <p className="md:text-[18px] font-[500] text-gray-300 text-justify">
           We work with a wide variety of clients, from well-known international
           brands and media organizations to cutting-edge startups and
           well-funded businesses.
@@ -59,11 +59,11 @@ function CaseStudy() {
         </div>
 
         {/* Text section */}
-        <div className="md:w-[50%] flex flex-col p-4 md:p-8">
-          <h2 className="font-semibold text-2xl md:text-3xl text-gray-900 mb-2">
+        <div className="md:w-[50%] flex flex-col px-4 py-2 md:h-[300px]">
+          <h2 className="font-[700] text-2xl md:text-3xl text-gray-900 mb-2">
             {content[currentImageIndex].title}
           </h2>
-          <p className="font-normal text-base md:text-lg text-gray-800 leading-[30px]">
+          <p className="font-normal text-base md:text-[18px] text-gray-800 leading-[30px]">
             {content[currentImageIndex].text}
           </p>
         </div>

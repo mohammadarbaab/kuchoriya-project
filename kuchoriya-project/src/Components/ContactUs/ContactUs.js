@@ -17,9 +17,9 @@ function ContactUs() {
     return phoneNumberPattern.test(phoneNumber);
   };
   return (
-    <div className=" flex flex-row flex-wrap justify-center items-center md:py-12  bg-blue-100">
-      <div className="flex md:flex-row flex-col px-4 justify-center items-center md:gap-12">
-        <div className="flex flex-col flex-wrap md:items-start justify-center gap-8 md:py-24 py-12 items-center">
+    <div className=" flex flex-row flex-wrap justify-center items-center md:py-12 h-auto  bg-blue-100">
+      <div className="flex md:flex-row flex-col px-4 justify-center items-center md:gap-12 py-8">
+        <div className="flex flex-col flex-wrap md:items-start justify-center gap-8 md:py-24 py-4 items-center">
           <div className="flex flex-col flex-wrap gap-2">
             <h1 className="font-[700] text-[32px]">
               Interested in working with us?

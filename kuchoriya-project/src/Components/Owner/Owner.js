@@ -54,7 +54,7 @@ function Owner() {
   ];
 
   return (
-    <div className="flex flex-col gap-6 py-6 bg-gray-100 rounded-2xl">
+    <div className="flex flex-col gap-6 md:py-6 rounded-2xl">
       <div className="flex flex-row gap-6 flex-wrap justify-center items-center px-2">
         <div className="flex flex-wrap gap-2 justify-center items-center px-4 ">
           <h1 className="font-[700] text-[32px] text-blue-950 justify-center items-center">

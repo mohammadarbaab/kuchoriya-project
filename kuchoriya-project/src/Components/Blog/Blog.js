@@ -32,7 +32,7 @@ function Blog() {
     },
   ];
   return (
-    <div className="flex flex-wrap gap-2 justify-center items-center px-4 py-12 mt-8 mb-8">
+    <div className="flex flex-wrap gap-2 justify-center items-center px-4">
       <div className=" flex flex-row gap-3 justify-center items-center flex-wrap">
         {blogData.map((blog) => (
           <div

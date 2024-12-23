@@ -56,7 +56,7 @@ function OurServices() {
     },
   ];
   return (
-    <div className="flex flex-row flex-wrap gap-2 py-12  w-full justify-center items-center">
+    <div className="flex flex-row flex-wrap gap-2  w-full justify-center items-center">
       <div className="flex flex-wrap w-[80%] gap-3 animate-slide-continuous justify-center items-center">
         {items.map((item, index) => (
           <div

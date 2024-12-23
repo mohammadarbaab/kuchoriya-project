@@ -26,7 +26,7 @@ function AcrossPartnership() {
   ];
   return (
     <div className="flex flex-col flex-wrap gap-4 justify-center items-center">
-      <div className="flex flex-col justify-center items-center gap-4 flex-wrap px-4 md:px-0">
+      <div className="flex flex-col justify-center mt-8 items-center gap-4 flex-wrap px-4 md:px-0">
         <h2 className="text-[28px] font-[500]">
           Building Strong Partnerships Across Industries
         </h2>

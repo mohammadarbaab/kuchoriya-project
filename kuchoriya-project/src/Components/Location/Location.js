@@ -71,11 +71,11 @@ function Location() {
     // Add more locations here if needed
   ];
   return (
-    <div className="flex flex-row flex-wrap  items-center py-12 justify-center px-4 md:px-32 gap-4">
+    <div className="flex flex-row flex-wrap  items-center justify-center px-4 md:px-32 gap-4">
       {locations.map((location, index) => (
         <div
           key={index}
-          className="flex flex-col bg-white border-2 gap-1 rounded-[20px] p-6 border-blue-950 shadow-xl hover:shadow-xl transition-shadow duration-300 ease-in-out items-center h-[300px] w-[250px] overflow-hidden"
+          className="flex flex-col bg-white border-2 gap-1 rounded-[20px] p-6 border-blue-950 shadow-xl hover:shadow-xl transition-shadow duration-300 ease-in-out items-center h-[300px] w-[220px] overflow-hidden"
         >
           <img
             src={location.image}

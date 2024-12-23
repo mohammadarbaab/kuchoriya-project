@@ -40,7 +40,7 @@ function Achivements() {
     },
   ];
   return (
-    <div className="flex flex-row items-center justify-center py-10 md:w-full gap-4">
+    <div className="flex flex-row items-center justify-center md:w-full gap-4">
       <div className="flex flex-wrap px-4 justify-center items-center gap-6">
       {achievementsData.map((achievement, index) => (
   <div

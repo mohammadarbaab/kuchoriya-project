@@ -3,6 +3,10 @@ import kuchoriyaLogo from "../../assests/kuchoriya_Logo.png";
 import star from "../../assests/star.png";
 import bestWebLogo from "../../assests/dubai.svg";
 import arrow from "../../assests/right-arrow.png";
+import linkedln from "../../assests/linkedin.png";
+import youtube from "../../assests/youtube.png";
+import instagram from "../../assests/instagram.png";
+import twitter from "../../assests/twitter.png";
 
 function Footer() {
   return (
@@ -81,7 +85,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-row gap-8 flex-wrap justify-center items-center mt-6">
+      <div className="flex md:flex-row flex-col gap-4 px-4 flex-wrap items-center mt-6 w-full md:px-32 justify-between">
         <div className="flex flex-col gap-4 px-4 flex-wrap">
           <p className="text-yellow-300 font-[500] text-[16px]">
             Sign up for the Newsletters
@@ -99,6 +103,17 @@ function Footer() {
           </div>
         </div>
         <img src={bestWebLogo} alt="best_web" className="w-[100px]" />
+        <div className="flex flex-row justify-center items-center flex-wrap gap-4">
+          <img src={linkedln} alt="linkedln" className="w-[30px]" />
+          <img src={instagram} alt="instagram" className="w-[30px]" />
+          <img src={youtube} alt="youtube" className="w-[30px]" />
+          <img src={twitter} alt="twitter" className="w-[30px]" />
+        </div>
+        <div className="flex flex-row flex-wrap">
+          <p className="flex flex-row flex-wrap text-center text-white">
+            © Kuchoriya Softwares All Rights Reserved 2024
+          </p>
+        </div>
       </div>
     </div>
   );
